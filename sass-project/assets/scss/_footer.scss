@@ -1,0 +1,23 @@
+/*Footer*/ 
+
+.footer-section {
+	padding: 45px 0;
+	background: $font-grey;
+	margin: 0 auto;
+
+	.flexbox {
+		justify-content: space-evenly;
+	}
+
+	span {
+		line-height: 15px;
+	    text-transform: uppercase;
+	    color: $font-color;
+	    font-weight: normal;
+	}
+
+	span a {
+		color: $font-color;
+		text-decoration: none;
+	}
+}

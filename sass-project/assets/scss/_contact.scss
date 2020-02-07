@@ -1,0 +1,123 @@
+/*contact section*/
+
+#contact-section {
+	padding: 100px 0;
+	background: url('../img/contact-bg.jpg') no-repeat center center;
+	background-size: cover;
+
+	h2 {
+		color: $font-color;
+	}
+	
+	p {		
+		color: $font-color;
+	}
+
+	form .flexbox {
+		max-width: 800px;
+		flex-direction: row;		
+		margin: 0 auto;
+	}
+	.email, .text {
+		width: 48%
+	}
+
+	.email {
+		margin-right: 30px;
+	}
+	.email input {		
+		width: 100%;		
+	}
+	.text input {		
+		width: 100%;
+	}
+
+	.textarea {
+		max-width: 800px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.textarea textarea {
+		width: 100%;
+		@include input;
+		height: 200px;
+		font-size: 1em;
+    	padding: 15px;
+	}
+} 
+
+#contact-section form {
+
+	.flexbox.submit {
+		justify-content: space-between;
+	}
+
+	.submit input {
+		@include a-btn-style;
+		background: $orange; 
+
+		&:hover {
+			background: #D7540D;
+		}
+	}
+	.icons a {
+				
+		display: inline-block;
+		text-align: center;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+#contact-section form .flexbox {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+
+	.email, .text {
+		width: 90%
+	}
+
+	.email {
+		margin-right: 0;
+	}
+	.email input {		
+		width: 100%;		
+	}
+	.text input {		
+		width: 100%;
+	}
+
+	}
+
+	.textarea {
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.textarea textarea {
+		width: 100%;		
+	}
+
+	.flexbox.submit .btn-submit {
+		margin-bottom: 20px;
+	}
+}	
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
+}

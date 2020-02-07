@@ -1,0 +1,114 @@
+		
+@import "reset.css";
+@import "variables";
+@import "mixins";
+@import "canvas-menu";
+@import "header";
+@import "thumbnails";
+@import "newsletter";
+@import "our-works";
+@import "cl-says";
+@import "team";
+@import "contact";
+@import "footer";
+@import "fonts.css";
+@import "owl.carousel.css";
+@import "owl.carousel.css";
+@import "fontawesome.css";
+
+
+
+/*General*/ 
+html,body {
+	font-family: $op-sans;	
+	
+	
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	min-width: 320px;
+	
+	
+}
+.flexbox {
+	display: flex;
+	justify-content: center;
+	
+}
+
+h2 {
+	@include section-heading;
+
+}
+
+h2 span {
+	color: $orange;
+}
+
+h2 + p {
+	@include p-section--description;
+}
+
+h4 + p {
+	@include small-paragraph;
+}
+
+a.btn {
+	@include a-btn-style;
+		
+	&:hover {
+		background: #f7600e;
+		border-color: transparent;
+		}	
+		}
+.icons a {
+	@include social-icons;
+}
+
+a.fb-icon {
+		background: #205b9f;		
+		transition: 0.6s;
+	&:hover {
+		box-shadow: 0 0 0 3px rgba( 32, 91, 159, 0.3 ), 0 0 0 7px rgba( 32, 91, 159, 0.15 );
+	}			
+}
+
+a.tw-icon {
+		background: #00ace3;	
+
+		&:hover {
+			box-shadow: 0 0 0 3px rgba(0, 172, 227, 0.3), 0 0 0 7px rgba(0, 172, 227, 0.15);
+		}
+	}
+
+a.g-icon {
+	background: #ff3921;
+	&:hover {
+		box-shadow: 0 0 0 3px rgba(225, 57, 33, 0.3), 0 0 0 7px rgba(255, 57, 33, 0.15);
+	}
+}
+
+a.dr-icon {
+	background: #ff72a5;			
+
+	&:hover {
+	box-shadow: 0 0 0 3px rgba(225, 57, 33, 0.3), 0 0 0 7px rgba(255, 57, 33, 0.15);
+	}
+} 
+
+input {
+	@include input;
+} 
+}	
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	.container {
+		padding: 0 15px 0 15px;
+	}
+	
+
+	
+}

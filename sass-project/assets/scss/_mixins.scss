@@ -1,0 +1,148 @@
+/*Mixins*/
+
+/*links-btn--style*/
+
+@mixin a-btn-style {
+	
+	width: 210px;
+	font-size: 1em;
+	height: 50px;
+	text-decoration: none;	
+	border: 1px solid #65696e;
+	border-radius: 8px;
+	line-height: 48px;
+	color: $font-color;
+	box-sizing: border-box;
+	// margin: 0 14px;
+	outline: none;
+	text-transform: uppercase;
+	display: inline-flex;
+	justify-content: center;
+	transition: 0.3s;
+	
+} 
+/*Section paragraph*/
+
+@mixin p-section--description {
+	max-width: 477px;
+	line-height: 1.875em;
+	color: $font-grey;
+	font-size: 1em;	
+	text-align: center;
+	margin: 0 auto 90px;
+}
+
+/*paragraph little section*/ 
+@mixin small-paragraph {
+	font-size: 0.875em;
+	text-align: center;
+	line-height: 1.625em;
+}
+
+
+/*Section Heading */ 
+
+@mixin section-heading {
+	font-weight: bolder;
+	font-size: 2.188em;
+	line-height: 40px;
+	color: $font-grey;	
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+/*Social icons */ 
+
+@mixin social-icons {	
+    width: 43px;
+    height: 43px;
+    color: #ffff;
+    outline: none;
+    text-decoration: none;
+    border-radius: 100px;
+    margin-right: 20px;
+    line-height: 43px;
+    font-size: 1.355em;
+ 	transition: 0.6s;
+}
+
+/*inputs*/
+
+@mixin input {
+	height: 50px;
+	border-radius: 9px;
+	background: #fff;
+	border: none;
+	outline: none;
+	color: $font-grey;	
+	padding: 0 20px;
+	box-sizing: border-box;
+	// width: 100%; 	
+	margin-bottom: 30px;
+	font-family: $op-light;
+} 
+
+/*owl-prev*/ 
+
+@mixin owl-prev {
+	position: absolute;
+	left: 0;
+	top: 0;		
+	bottom: 0;
+	right: 0;
+	margin: auto auto auto 20px;
+	transition: 0.6s;
+	color: $font-color;
+	opacity: 0;	
+	background: transparent;
+	border-top: 1vmin solid white;
+	border-right: 1vmin solid white;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+	transform: translate3d(0,-50%,0) rotate(-135deg);
+
+}
+
+@mixin owl-next {
+	position: absolute;
+	left: 0;
+	top: 0;		
+	bottom: 0;
+	right: 0;
+	margin: auto 20px auto auto;
+	transition: 0.6s;
+	color: $font-color;
+	opacity: 0;		
+	transform: translate3d(0,-50%,0) rotate(45deg);
+	border-top: 1vmin solid white;
+	border-right: 1vmin solid white;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+}
+
+
+@mixin owl-dots {
+	display: flex;
+	justify-content: center;
+	flex-direction: flex-end;
+}
+
+@mixin owl-dot {	
+	width: 20px;
+	height: 20px;
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	margin: 7px;
+	border-radius: 100px;
+	transition: 0.3s;
+}
+
+@mixin service-icon {
+		width: 150px;
+		height: 150px;
+		border-radius: 150px;
+		border: 1px solid rgba( 59, 67, 76, 0.3 );
+		margin: 0 auto 30px;
+
+}
+

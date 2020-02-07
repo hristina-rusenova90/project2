@@ -1,0 +1,89 @@
+/*thumbnails*/ 
+
+#thumbnails {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	
+	
+	.thumbail-wrap {
+		width: 25%;
+	}
+
+	div[class*="service-"] {
+		@include service-icon;
+	}
+
+	.service-one-icon {		
+		background: url('../img/service_one.png') no-repeat center center;
+	}
+
+	.service-two-icon {		
+		background: url('../img/service_two.png') no-repeat center center;
+	}
+
+	.service-three-icon {		
+		background: url('../img/service_three.png') no-repeat center center;
+	}
+
+	.service-four-icon {		
+		background: url('../img/service_four.png') no-repeat center center;
+	}
+
+	h4 {
+		width: 100%;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		text-align: center;
+		font-weight: bolder;
+	}
+
+	p {		
+		color: $font-grey;		
+		max-width: 190px;
+		margin: 0 auto;
+	}
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	#thumbnails .flexbox.thumbnails {
+		flex: none;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		
+	.thumbail-wrap {			
+			width: 90%;
+			margin: 0 auto;			
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	#thumbnails .flexbox.thumbnails {
+		flex-direction: row;
+	    justify-content: center;
+	    flex-wrap: wrap;
+	    align-items: center;
+			
+	.thumbail-wrap {			
+		width: 50%;			
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
+}

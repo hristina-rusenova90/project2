@@ -1,0 +1,121 @@
+/*Canvas Menu*/ 
+
+
+.canvas {
+	display: none;
+	flex-direction: column;
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: rgba(59,67,76,0.95);
+
+	.cl-btn {
+		color: $font-color;
+		display: flex;
+		justify-content: flex-end;
+		font-size: 3em;
+		font-weight: bolder;				
+	}
+
+	.cl-btn span {
+		margin-top: 34px;
+    	margin-right: 71px;
+    	transition: 0.3s;
+	
+	&:hover,
+	&:focus {
+	    color: $orange;
+	    text-decoration: none;
+	    cursor: pointer;
+	    -ms-transform: rotate(20deg); /* IE 9 */
+  		transform: rotate(20deg); /* Standard syntax */	
+	
+		}
+	}
+}
+
+ div.main--content { 	
+ 		text-align: center;
+ 	nav.menu ul {
+ 		display: flex;
+ 		flex-direction: column;
+ 	}
+ 	ul li {
+ 		margin-bottom: 20px;
+ 	}
+
+ 	ul li a {
+ 		text-decoration: none;	   
+	    color: $font-color;
+	    text-align: center;
+	    font-size: 1.625em;  	    
+	    transition: 0.5s;
+
+	    &:hover {
+	    	color: #f7600e;
+	    }
+ 	}
+
+ 	div.horizontal-line {
+ 		height: 2px;
+	    background: $orange;
+	    margin: 15px auto 55px auto;
+	    max-width: 33.33%;
+	    text-align: center;
+ 	}
+ }
+
+ div.icons {
+ 	display: inline-flex;
+ 	justify-content: center;  			
+
+ 	a.be-icon {
+	 	background: #009bd5;	    
+	    transition: 0.6s;
+	&:hover {
+		box-shadow: 0 0 0 3px rgba( 32, 91, 159, 0.3 ), 0 0 0 7px rgba( 32, 91, 159, 0.15 );
+	}    
+ 	}
+
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+   #canvas-menu.canvas .cl-btn span {
+		margin-top: 34px;
+    	margin-right: 71px;
+    	transition: 0.3s;
+	
+	&:hover,
+	&:focus {
+	    color: $orange;
+	    text-decoration: none;
+	    cursor: pointer;
+	    -ms-transform: rotate(20deg); /* IE 9 */
+  		transform: rotate(20deg); /* Standard syntax */	
+	
+		}
+	}
+    div.canvas-icon {
+    	margin-bottom: 15px;
+        
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    div.canvas-icon {
+    	margin-bottom: 20px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
+}

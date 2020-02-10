@@ -1,5 +1,5 @@
 /*Newsletter*/ 
-@import "variables";
+
 #newsletter.newsletter {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -9,6 +9,8 @@
 	form {
 		width: 100%;
 	}
+
+	 
 
 	input[type="text"] {		
 		width: 560px;
@@ -32,15 +34,25 @@
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-	#newsletter.newsletter form {
+	#newsletter.newsletter {
+			padding: 50px 0;
+	 form {
 		flex-wrap: wrap;
+		flex-direction: column;
+	}
 
+	div.input-text {
+		margin: 0 auto;
+	}
 		input[type="text"] {
 		
 		width: 300px;
 		margin-bottom: 30px !important;
 		margin-right: 0 !important;
 
+	}
+	div.btn-submit {
+		margin: 0 auto;
 	}
 		input[type="submit"] {
 			width: auto;

@@ -284,15 +284,18 @@ div.slider-controls {
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  #thumbnails .flexbox.thumbnails {
-    flex: none;
-    display: block;
-    width: 100%;
-    margin: 0 auto; }
-    #thumbnails .flexbox.thumbnails .thumbail-wrap {
+  #thumbnails {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    #thumbnails .flexbox.thumbnails {
+      flex: none;
+      display: block;
+      width: 100%;
+      margin: 0 auto; }
+    #thumbnails .thumbail-wrap {
       width: 90%;
       margin: 0 auto; }
-    #thumbnails .flexbox.thumbnails p {
+    #thumbnails p {
       margin-bottom: 20px; } }
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
@@ -307,8 +310,6 @@ div.slider-controls {
       margin-bottom: 20px; } }
 /* Large devices (large desktops, 1200px and up) */
 /*Newsletter*/
-/*Fonts*/
-/*Colors*/
 #newsletter.newsletter {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -330,13 +331,20 @@ div.slider-controls {
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  #newsletter.newsletter form {
-    flex-wrap: wrap; }
-    #newsletter.newsletter form input[type="text"] {
+  #newsletter.newsletter {
+    padding: 50px 0; }
+    #newsletter.newsletter form {
+      flex-wrap: wrap;
+      flex-direction: column; }
+    #newsletter.newsletter div.input-text {
+      margin: 0 auto; }
+    #newsletter.newsletter input[type="text"] {
       width: 300px;
       margin-bottom: 30px !important;
       margin-right: 0 !important; }
-    #newsletter.newsletter form input[type="submit"] {
+    #newsletter.newsletter div.btn-submit {
+      margin: 0 auto; }
+    #newsletter.newsletter input[type="submit"] {
       width: auto;
       margin-left: 15px; } }
 /* Medium devices (desktops, 992px and up) */
@@ -439,6 +447,10 @@ div a.show {
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15), 0 0 0 10px rgba(0, 0, 0, 0.05); }
 
 /* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  #our-works {
+    padding-top: 50px;
+    padding-bottom: 50px; } }
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 /*Client Says*/
@@ -530,6 +542,14 @@ div a.show {
   #cl-says #cl-slider:hover .owl-next {
     opacity: 1; }
 
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 15px 0 15px; }
+
+  #cl-says {
+    padding-top: 50px;
+    padding-bottom: 50px; } }
 /*team*/
 #our-team-section {
   padding: 100px 0; }
@@ -647,6 +667,10 @@ div a.show {
   line-height: 1.75em;
   transition: 0.3s; }
 
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  #our-team-section {
+    padding: 50px 0; } }
 /*contact section*/
 #contact-section {
   padding: 100px 0;
@@ -716,17 +740,17 @@ div a.show {
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  #contact-section form .flexbox {
-    width: 100%;
-    flex-direction: column;
-    align-items: center; }
-    #contact-section form .flexbox .email, #contact-section form .flexbox .text {
+  #contact-section {
+    padding: 50px 0; }
+    #contact-section #contact-section form .flexbox {
+      width: 100%;
+      flex-direction: column;
+      align-items: center; }
+    #contact-section .email, #contact-section .text {
       width: 90%; }
-    #contact-section form .flexbox .email {
-      margin-right: 0; }
-    #contact-section form .flexbox .email input {
+    #contact-section .email input {
       width: 100%; }
-    #contact-section form .flexbox .text input {
+    #contact-section .text input {
       width: 100%; }
 
   .textarea {
@@ -759,11 +783,14 @@ div a.show {
 
 /*General*/
 html, body {
-  font-family: "open_sansregular"; }
+  font-family: "open_sansregular";
+  overflow-x: hidden;
+  min-width: 320px; }
   html .container, body .container {
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
-    min-width: 320px; }
+    min-width: 320px;
+    box-sizing: border-box; }
   html .flexbox, body .flexbox {
     display: flex;
     justify-content: center; }
@@ -847,8 +874,5 @@ html, body {
     font-family: "open_sanslight"; }
 
 /* Small devices (tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .container {
-    padding: 0 15px 0 15px; } }
 
 /*# sourceMappingURL=app.css.map */

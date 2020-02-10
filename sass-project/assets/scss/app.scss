@@ -21,13 +21,16 @@
 /*General*/ 
 html,body {
 	font-family: $op-sans;	
+	overflow-x: hidden;
+	min-width: 320px;
 	
 	
 
 .container {
-	max-width: 1200px;
+	max-width: 1170px;
 	margin: 0 auto;
 	min-width: 320px;
+	box-sizing: border-box;
 	
 	
 }
@@ -106,7 +109,7 @@ input {
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 	.container {
-		padding: 0 15px 0 15px;
+		// padding: 0 15px;
 	}
 	
 

@@ -1,0 +1,60 @@
+/*section heading*/
+@mixin h2 {
+	font-family: $bold;
+	
+	text-align: center;
+	font-size: 2.5em;
+	letter-spacing: 4px;
+	line-height: 30px;
+} 
+
+@mixin section-description {
+		max-width: 600px;
+		font-size: 1.125em;
+		line-height: 1.625em;		
+		text-align: center;
+		margin: 0 auto 79px auto;
+}
+
+/*horizontal-line*/ 
+
+@mixin hr {
+		max-width: 87px;
+		height: 4px;
+		background: #14a58c;
+		text-align: center;
+		margin: 25px auto 25px auto;
+}
+
+/*h4*/
+
+@mixin h4 {
+		font-size: 1.5em;
+		line-height: 1.125em;		
+		font-family: $bold;
+		text-align: center;
+		margin-bottom: 15px;
+} 
+
+@mixin a-big-btn {
+		width: 286px;
+		height: 69px;		
+		background: #eb7d4b;
+		font-family: $semi-bold;
+		line-height: 26px;
+		display: inline-flex;
+		text-decoration: none;
+		font-size: 1.125em;
+		text-transform: uppercase;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+		cursor: pointer;
+		box-shadow: 0 4px #c86a40;
+		transition: 0.3s;
+		color: $font-color;
+
+		 &:hover {
+		 	background: #d4622f;
+		 }
+}

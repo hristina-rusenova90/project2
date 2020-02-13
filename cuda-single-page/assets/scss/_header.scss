@@ -1,0 +1,100 @@
+/*Header*/ 
+
+header {
+	min-height: 595px;
+	background: #87509c;
+	color: $font-color;
+
+	.flex {
+		justify-content: space-between;
+	}
+
+	.flex div {
+		margin-top: 57px;
+		margin-left: 42px;
+		margin-bottom: 147px;
+	}
+	nav {
+		margin: 67px 0 25px 0;
+	}
+	nav ul {
+		display: flex;		
+	}
+	li {
+		margin-right: 10px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	li a {
+		text-decoration: none;		
+		font-size: 1em;
+		line-height: 18px;
+		text-transform: uppercase;
+		width: 77px;
+		outline: none;
+		text-align: center;
+		display: inline-flex;
+		height: 32px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+		transition: 0.3s;
+		color: $font-color;
+
+
+		&:hover {
+			background: #643a79;
+		}
+	}
+
+	h1 {
+		font-family: $bold;
+		font-size: 2.625em;
+		line-height: 49px;
+		text-align: center;		
+		margin-bottom: 60px;
+	}
+
+	.a-btn-style {
+		text-align: center;
+	}
+	 
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	header .container .flex {
+		flex-direction: column;
+		align-items: center;
+	 div {
+		margin: 25px auto;
+	}
+
+	nav {
+		margin: 40px auto;
+	}
+	ul li a {
+		width: 55px;
+		height: 30px;
+		line-height: 10px;
+	}}
+	header  h1 {
+		line-height: 1.313em;
+		font-size: 1.625em;
+		
+	}	
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
+}

@@ -1,0 +1,51 @@
+/*Testimonials*/ 
+
+#people-say {
+	padding: 119px 130px;
+	background: #d74680;
+	color: $font-color;
+	h2	{
+		text-transform: uppercase;
+	}
+
+	.hr-line {
+	background:	#b73c6d;
+	}
+	.flex {
+		flex-wrap: wrap;
+	}
+
+	.article {
+		width: 50%;
+	}
+
+	.flex-article {
+		display: flex;
+	}
+
+	.section-icon {
+		width: 94px;
+		height: 95px;
+		background: url('../img/article.png')no-repeat center center;
+		background-size: cover;
+		margin: 0 auto;
+		border-radius: 95px;
+		
+	}
+	.d-flex {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+}
+	cite {
+		max-width: 330px;		
+		font-size: 1.313em;		
+		line-height: 1.938em;		
+		font-family: $italic;		
+	}
+
+	h4 {
+		line-height: 24px;
+	}
+}

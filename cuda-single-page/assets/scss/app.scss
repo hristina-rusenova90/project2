@@ -7,11 +7,13 @@
 @import "team"; 
 @import "skills"; 
 @import "portfolio"; 
-@import "testimonials";    
+@import "testimonials"; 
+@import "contact-form";
+@import "footer"; 
 
 
 
-
+/*Global Styles*/ 
 
 html, body {
 	font-family: 'titillium_webregular';
@@ -19,65 +21,97 @@ html, body {
 	box-sizing: border-box;
 	overflow-x: hidden;
 }
-.container {
-	
-	max-width: 1100px;
-	margin: 0 auto;
-	box-sizing: border-box;
-}
-
-.flex {
-	display: flex;
-	justify-content: center;
-	
-}
-
-
-h2 {
-	@include h2;
+	.container {
+		
+		max-width: 1100px;
+		margin: 0 auto;
+		box-sizing: border-box;
 	}
 
-.hr-line + p {
-	@include section-description;
-}	
-
-div.hr-line {
-		@include hr;
+	.flex {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;	
 	}
 
-a.big-btn {
-	@include a-big-btn;
-}	
+	.flex .flex-item-4 {
+	    width: 25%;
+	    text-align: center
+	}
 
-div.service-icon {
-	height: 132px;
-	margin-bottom: 60px;
-}
+	.flex .flex-item-2 {
+		width: 50%;
+		display: flex;
+	}
 
-h4 {
-	@include h4;
-}
+	h2 {
+		@include h2;
+		}
 
-	
+	.hr-line + p {
+		@include section-description;
+	}	
 
+	div.hr-line {
+			@include hr;
+		}
 
+	a.big-btn {
+		@include a-big-btn;
+	}	
 
+	div.service-icon {
+		height: 132px;
+		margin-bottom: 60px;
+	}
+
+	h4 {
+		@include h4;
+	}
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 	.container {
 		padding: 0 15px;
+	.flex {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+	.flex-item-4 {
+	    width: 90%;
+	    margin-bottom: 15px;	    
 	}
+
+	.flex-item-2 {
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+	}
+
+}
 
 	h2 span {
 			display: block;
 			margin-top: 15px;
 		}
 }
+}
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-	
+
+	.container {
+		.flex {
+			justify-content: center;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+
+		.flex-item-4 {
+			width: 50%;
+			margin-bottom: 20px;
+		}
+	}
 }
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {

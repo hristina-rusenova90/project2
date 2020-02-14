@@ -28,19 +28,20 @@ header {
 	}
 
 	li a {
-		text-decoration: none;		
+		@include link-style;
+		// text-decoration: none;		
 		font-size: 1em;
 		line-height: 18px;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		width: 77px;
-		outline: none;
-		text-align: center;
-		display: inline-flex;
+		// outline: none;
+		// text-align: center;
+		// display: inline-flex;
 		height: 32px;
-		justify-content: center;
-		align-items: center;
-		border-radius: 4px;
-		transition: 0.3s;
+		// justify-content: center;
+		// align-items: center;
+		// border-radius: 4px;
+		// transition: 0.3s;
 		color: $font-color;
 
 
@@ -59,13 +60,26 @@ header {
 
 	.a-btn-style {
 		text-align: center;
+
+	}
+
+	a.big-btn {
+		background: #eb7d4b;
+		box-shadow: 0 4px #c86a40;
+		&:hover {
+		 	background: #d4622f;
+		 }
+	}
 	}
 	 
-}
+
 
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+	header {
+		min-height: 530px;
+	}
 	header .container .flex {
 		flex-direction: column;
 		align-items: center;
@@ -77,16 +91,15 @@ header {
 		margin: 40px auto;
 	}
 	ul li a {
-		width: 55px;
-		height: 30px;
-		line-height: 10px;
+		width: 48px;
+		height: 25px;
+		line-height: 8px;
 	}}
 	header  h1 {
 		line-height: 1.313em;
 		font-size: 1.625em;
 		
 	}	
-	
 }
 
 /* Medium devices (desktops, 992px and up) */

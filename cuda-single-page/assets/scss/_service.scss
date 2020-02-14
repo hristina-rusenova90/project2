@@ -9,9 +9,8 @@
 	}
 }
 
-	#service .service-wrap {
-
-		width: 25%;
+	#service .flex-item-4 {
+		
 		div.service-icon-branding {
 			height: 132px;
 			background: url('../img/Flag.png') no-repeat center center;			
@@ -32,12 +31,7 @@
 			background: url('../img/Rocket.png') no-repeat center center;			
 		}
 
-		h4 {
-			font-family: $bold;
-			font-size: 1.5em;
-			line-height: 1.125em;
-			text-align: center;
-			text-transform: uppercase;			
+		h4 {					
 			margin-bottom: 25px;
 		}
 
@@ -54,18 +48,7 @@
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 	#service {
-		padding: 50px 0 50px 0;
-
-	#service div.flex {
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.flex div.service-wrap {
-			width: 90%;
-			margin-bottom: 15px;
-		}
+		padding: 50px 0 50px 0;		
 	}
 	
 }
@@ -73,19 +56,7 @@
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
 	#service {
-		padding: 50px 0 50px 0;
-
-	 .flex {
-			
-			justify-content: center;
-			flex-wrap: wrap;
-			flex-direction: row;
-		}
-
-		.flex .service-wrap {
-			width: 50%;
-			margin-bottom: 15px;
-		}
+		padding: 50px 0 50px 0;		
 	}
 }
 /* Large devices (large desktops, 1200px and up) */

@@ -1,7 +1,7 @@
 /*Testimonials*/ 
 
-#people-say {
-	padding: 119px 130px;
+div#people-say {
+	padding: 119px 0 130px 0;;
 	background: #d74680;
 	color: $font-color;
 	h2	{
@@ -11,17 +11,14 @@
 	.hr-line {
 	background:	#b73c6d;
 	}
-	.flex {
-		flex-wrap: wrap;
-	}
 
-	.article {
-		width: 50%;
-	}
+	.hr-line + p {
+		margin-bottom: 86px;
+	}	
 
-	.flex-article {
-		display: flex;
-	}
+	.article-marign {
+		margin-bottom: 156px;
+	}	
 
 	.section-icon {
 		width: 94px;
@@ -29,23 +26,61 @@
 		background: url('../img/article.png')no-repeat center center;
 		background-size: cover;
 		margin: 0 auto;
-		border-radius: 95px;
-		
+		border-radius: 95px;		
 	}
+
 	.d-flex {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 
-}
-	cite {
+	}
+	p  {
 		max-width: 330px;		
-		font-size: 1.313em;		
-		line-height: 1.938em;		
-		font-family: $italic;		
+		font-size: 21px;		
+		line-height: 1.125em;		
+		font-family: $italic;	
+		margin-bottom: 30px;	
 	}
 
 	h4 {
-		line-height: 24px;
+		line-height: 20px;
+		margin-bottom: 10px;
+		text-align: left;
+		text-transform: uppercase;
 	}
+	h4 + span {
+		font-size: 18px;
+		line-height: 26px;
+		color: #ffdd99;
+	}
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	#people-say {
+		padding: 50px 0 50px 0;	
+ 
+		div.article-marign {
+		margin-bottom: 0;
+	}
+		div.section-icon {
+		margin-bottom: 15px;
+	}
+		.d-flex {
+			align-items:center;
+			margin-bottom: 20px;
+		}		
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
 }

@@ -16,22 +16,14 @@
 }
 
 #team {
-
-	.flex {
-
-	}
-	.person {
-		width: 25%;
-		text-align: center;
-	}
-	.person .person-icon {
+	
+	.flex-item-4 .person-icon {
 		background: url('../img/person.jpg')no-repeat center center;
 		background-size: cover;
 		width: 200px;
 		height: 200px;
 		border-radius: 200px;
 		margin: auto auto 40px auto;
-
 	}
 
 	h4 {		
@@ -73,42 +65,18 @@
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 	#team {
-		padding: 50px 0 50px 0;
-
-	 div.flex {
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
+		padding: 50px 0 50px 0;	 
 
 		.flex.social-icons {
 			flex-direction: row;
-		}
-
-		.flex div.person {
-			width: 90%;
-			margin-bottom: 15px;
-		}		
-	}
-	
+		}			
+	}	
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
 	#team {
-		padding: 50px 0 50px 0;
-
-	 .flex {
-			
-			justify-content: center;
-			flex-wrap: wrap;
-			flex-direction: row;
-		}
-
-		.flex .person {
-			width: 50%;
-			margin-bottom: 15px;
-		}
+		padding: 50px 0 50px 0;	 
 	}
 }
 /* Large devices (large desktops, 1200px and up) */

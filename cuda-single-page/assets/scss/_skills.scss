@@ -2,19 +2,11 @@
 
 #skills {
 	padding: 120px 0 120px 0;
-	color: $font-color-grey;
-
-	
+	color: $font-color-grey;	
 
 	.hr-line {
 		background: #dfe8ed;
-	}
-
-	
-	.flex-circle {
-		width: 25%;
-		margin-bottom: 120px;
-	}
+	}	
 	
 	.flex .circle-wrap {
 	  margin: 30px auto;
@@ -25,8 +17,8 @@
 
 	}
 
- .circle .mask,
- .circle .fill {
+ 	.circle .mask,
+	.circle .fill {
 	  width: 160px;
 	  height: 160px;
 	  position: absolute;
@@ -100,10 +92,10 @@
 	  margin-left: 10px;
 	  position: absolute;
 	  z-index: 100;	 
-	 font-size: 50px;
-	 letter-spacing: 1px;
-	 line-height: 138px;	 
-	 font-family: $light;
+	  font-size: 50px;
+	  letter-spacing: 1px;
+	  line-height: 138px;	 
+	  font-family: $light;
 	}
 	
 }
@@ -111,39 +103,15 @@
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 	#skills {
-		padding: 50px 0 50px 0;
-
-	 div.flex {
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-
-
-		div.flex-circle {
-			width: 90%;
-			margin-bottom: 15px;
-		}		
+		padding: 50px 0 50px 0;	
 	}
 	
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-	#team {
-		padding: 50px 0 50px 0;
-
-	 .flex {
-			
-			justify-content: center;
-			flex-wrap: wrap;
-			flex-direction: row;
-		}
-
-		.flex .person {
-			width: 50%;
-			margin-bottom: 15px;
-		}
+	#skills{
+		padding: 50px 0 50px 0;	 
 	}
 }
 /* Large devices (large desktops, 1200px and up) */

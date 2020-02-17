@@ -1,0 +1,109 @@
+/*Grid*/
+
+.row {
+	width: 100%;
+	display: flex;
+	justify-content: center;	
+	text-align: center;
+}
+.items-col-1 {
+	width: 100%;
+	text-align: center;
+}
+.items-col-2 {
+	width: 50%;
+}
+.items-col-4 {
+	width: 25%;
+	text-align: center;
+}
+
+.items-col-sm {
+	width: 20%;
+
+}
+
+.items-col-md {
+	width: 70%;
+}
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	.container {
+		padding: 0 15px;
+	.row {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+			flex-wrap: wrap;
+	.items-col-4 {
+	    width: 90%;
+	    margin-bottom: 15px;	    
+	}
+
+	.items-col-2{
+		width: 90%;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+
+	.items-col-sm {
+		width: 90%;
+		text-align: center;
+		justify-content: center;
+		margin: 0 auto;
+
+	}
+
+	.items-col-md {
+		width: 90%;
+	}
+
+
+}
+	
+}}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+	.container {
+		.row {
+			justify-content: center;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+
+		.items-col-4 {
+			width: 50%;
+			margin-bottom: 20px;
+		}
+
+		.items-col-sm {
+			width: 25%;
+			text-align: center;
+			justify-content: center;
+			margin: 0 auto;
+
+	}
+		.items-col-md {
+			width: 65%;
+		}
+
+		#people-say .row#margin {
+		margin-bottom: 0;
+	}
+	}
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
+}

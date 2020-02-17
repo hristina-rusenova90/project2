@@ -1,0 +1,132 @@
+/*Contact Form*/
+#contact-form {
+	padding: 119px 0 115px 0;
+	background: #3c5499;
+	color: $font-color;
+
+	.hr-line {
+		background: #273a71;
+	}
+
+	.items-col-1 p {
+		max-width: 779px;
+	}
+
+	form  {
+		max-width: 860px;
+		text-align: center;
+		margin: 0 auto;
+	}	
+
+	 .your-name,  .email {
+		
+		position:relative;
+		&:before {
+				content: "*";
+				color: red;
+				display: inline;
+				position: absolute;
+				top: 20px;
+		    	left: 141px;
+			}
+	}	
+	
+
+	div input[type="email"],
+	div input[type="text"]
+	 {
+		font-size: 18px;
+		line-height: 18px;
+		border-radius: 4px;
+		background: #273a71;
+		padding: 20px 8px 20px 25px;
+		width: 85%;		
+		outline: none;
+		border: none;	
+		color: $font-color;	
+		&:focus {
+			border: 1px solid #777982;
+		}	
+			
+	}		
+	
+	.textarea {
+		width: 97%;
+		margin-top: 25px;
+		position:relative;
+		
+			&:after {
+				content: "*";
+				color: red;
+				display: inline;
+				position: absolute;
+				top: 24px;
+		    	left: 171px;
+		}
+	}
+
+	.textarea textarea {
+		width: 94%;		
+		border: none;
+		padding: 24px;
+		height: 200px;
+		position: relative;
+		background: #273a71;
+		border-radius: 4px;
+		outline: none;
+		margin-bottom: 60px;
+		
+		&::placeholder {
+			color: $font-color;
+			font-size: 18px;
+			font-family: 'dejavu_sansbook';
+		}
+		
+		&:focus {
+			border: 1px solid #777982;
+		}		
+	}
+	input::placeholder {
+		color: $font-color;
+		font-size: 18px;
+		font-family: 'dejavu_sansbook';
+	}	
+	
+	.big-btn {
+		@include a-big-btn;
+		background: #30bae7;
+		box-shadow: 0 4px #299ec5;
+		outline: none;
+		border: none;
+
+		&:hover {
+		 	background: #1f6880;
+		 }		
+	}	
+} 
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	#contact-form {
+		padding: 50px 0 50px 0;
+
+	
+	 .email, .your-name {		
+		margin-bottom: 15px;
+	}
+
+	.textarea {
+		width: 90%;
+		display: inline-flex;
+	}			
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}

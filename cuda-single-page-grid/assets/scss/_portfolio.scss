@@ -1,0 +1,138 @@
+/*Portfolio*/ 
+
+section #portfolio-section {
+	color: #393939;
+	padding-top: 120px;
+	padding-bottom: 109px;
+	background: #ffdd99;
+	.hr-line {
+		background: #e5c37f;
+	}
+	.items-col-1 p {
+		max-width: 516px;
+		margin-bottom: 44px;
+	}	
+
+	 .items-col-2 {
+		margin-bottom: 65px;
+		margin-right: 10px;
+	}
+
+	div[class*="item-icon-"] {
+		width: 540px;
+		height: 310px;
+		margin-bottom: 30px;
+	}
+
+	.items-col-1.links a {
+		@include link-style;		
+		font-size: 1.125em;
+		line-height: 35px;
+		width: 90px;
+		height: 35px;		
+		margin-right: 10px;		
+		font-family:'titillium_webregular';
+		color: #393939;
+		font-weight: bold;
+		background: #ebc985;	
+		margin-bottom: 60px;		
+
+		&.active:hover {
+			border: solid #1e1e1c;
+			border-width: thin;
+			background: $font-color;
+		}
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	.item-icon-one {
+		background: url('../img/portfolio-1.png') no-repeat center center;
+		background-size: cover;
+	}
+	.item-icon-two {
+		background: url('../img/portfolio-2.png') no-repeat center center;
+		background-size: cover;
+	}
+
+	.item-icon-three {
+		background: url('../img/portfolio-3.png') no-repeat center center;
+		background-size: cover;
+	}
+
+	.item-icon-four {
+		background: url('../img/portfolio-4.png') no-repeat center center;
+		background-size: cover;
+	}
+
+	h5 {
+		text-align: center;
+		line-height: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.items-col-1 .btn-wrap {
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 109px;
+	}
+	 .items-col-1 a.big-btn {
+		background: #17c2a4;
+		box-shadow: 0 4px #14a58c;
+
+		&:hover {
+			background: #2db19a;
+		}
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	section #portfolio-section {
+		padding: 50px 0 50px 0; 
+
+	.items-col-2 {
+			margin-right: 0;
+			margin-left: 0;
+		}
+
+	.items-col-2 div[class*="item-icon-"] {
+			width: 279px;
+    		height: 166px;
+    		display: inline-flex;
+		}
+
+		.items-col-1.links a {
+			margin-bottom: 25px;
+			width: 65px;
+		}
+
+		.btn-wrap {
+			margin-bottom: 50px;
+		}			
+	}	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	#portfolio-section {
+		padding: 50px 0 50px 0;	
+
+		.row .items-col-2 {
+			margin-right: 0;
+		}
+
+		.items-col-2 div[class*="item-icon-"] {
+			width: 279px;
+    		height: 166px;
+    		display: inline-flex;
+		}
+	}
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
+}

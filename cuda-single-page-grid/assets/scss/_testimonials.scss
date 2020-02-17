@@ -1,0 +1,97 @@
+/*Testimonials*/ 
+
+div#people-say {
+	padding: 119px 0 130px 0;;
+	background: #d74680;
+	color: $font-color;
+	h2	{
+		text-transform: uppercase;
+	}
+
+	.hr-line {
+	background:	#b73c6d;
+	}
+	.row#margin{
+		margin-bottom: 156px;
+	}	
+
+	.items-col-1 p {
+		margin-bottom: 86px;
+	}	
+
+	.items-col-sm .section-icon {
+		width: 94px;
+		height: 95px;
+		background: url('../img/article.png')no-repeat center center;
+		background-size: cover;
+		margin: auto 50px auto auto;
+		border-radius: 95px;
+
+	}
+	
+	.items-col-md p  {
+		max-width: 380px;		
+		font-size: 21px;		
+		line-height: 1.625em;		
+		font-family: $italic;	
+		margin-bottom: 30px;
+		text-align: left;	
+	}
+
+	h4 {
+		line-height: 20px;
+		margin-bottom: 10px;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	.items-col-1.span-wrap {
+		text-align: left;
+	}
+	.items-col-1.span-wrap span {
+		font-size: 18px;
+		line-height: 26px;
+		color: #ffdd99;
+		
+	}
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	#people-say {
+		padding: 50px 0 50px 0;	
+
+	
+	.items-col-2 {
+		margin-bottom: 30px;
+	}
+	.items-col-sm div.section-icon {
+		margin: auto auto 20px auto;
+	}
+
+	.row .items-col-md p {
+		text-align: unset;
+	}
+
+	.items-col-1 h4 {
+		text-align:center;
+	}
+
+	.items-col-md .items-col-1.span-wrap {
+		text-align: unset;
+	}			
+	}
+	#people-say .row#margin {
+ 		margin-bottom: 0!important;
+ 	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
+}

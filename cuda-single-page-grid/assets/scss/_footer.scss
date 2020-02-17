@@ -1,0 +1,59 @@
+/*Footer*/
+
+footer {
+	background: #344b8e;
+	color: $font-color;
+	padding: 40px 0;
+
+	ul  {
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		li {
+			margin-right: 50px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			a {
+				font-family: $semi-bold;
+				font-size: 1.5em;
+				line-height: 1.875em;
+				text-align: center;
+				text-decoration: none;
+				color: #fff;
+			}
+			a.active {
+				color: #30bae7;
+			}
+		}
+	}
+} 
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	
+		footer ul li {
+		margin-right: 8px;
+
+		a {
+			font-size: 1em;
+			line-height: 1.875em;
+		}
+	}
+	}
+	
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
+}

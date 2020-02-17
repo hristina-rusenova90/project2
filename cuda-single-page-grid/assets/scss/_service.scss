@@ -1,0 +1,66 @@
+/*Service*/ 
+
+#service {
+	background: #17c2a4;
+	padding: 119px 0 127px 0;
+	color: $font-color;	
+	.items-col-1 p {
+		margin-bottom: 80px;
+	}
+}
+
+	#service .items-col-4 {
+		
+		div.service-icon-branding {
+			height: 132px;
+			background: url('../img/Flag.png') no-repeat center center;			
+		}
+
+		div.service-icon-design {
+			height: 132px;
+			background: url('../img/pen.png') no-repeat center center;			
+		}
+
+		div.service-icon-development {
+			height: 132px;
+			background: url('../img/Gears.png') no-repeat center center;			
+		}
+
+		div.service-icon-rocket {
+			height: 132px;
+			background: url('../img/Rocket.png') no-repeat center center;			
+		}
+
+		h4 {					
+			margin-bottom: 25px;
+		}
+
+		 p {
+			max-width: 200px;
+			margin: 0 auto;
+			font-size: 1em;
+			line-height: 1.5em;
+			text-align: center;			
+		}
+	}
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	#service {
+		padding: 50px 0 50px 0;		
+	}
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	#service {
+		padding: 50px 0 50px 0;		
+	}
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
+}

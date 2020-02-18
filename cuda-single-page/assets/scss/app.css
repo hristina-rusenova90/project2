@@ -59,9 +59,17 @@ header {
   /*Btn Open Menu on Desktop*/ }
   header .header-content--flex {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
   header #main_nav-mobile {
     display: none; }
+  header #logo {
+    position: absolute; }
+  header #main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; }
   header nav#main-nav ul {
     display: flex; }
   header li {

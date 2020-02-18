@@ -8,14 +8,22 @@ header {
 	.header-content--flex {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
 	}
 
 	/*Btn Open Menu on Desktop*/ 					
 	#main_nav-mobile {
 		display: none;
 	}
-		
-	
+	#logo {
+		position: absolute;
+	}	
+	#main-nav {
+		position: absolute;
+		top: 0;
+	    right: 0;
+	    bottom: 0;
+	}
 	nav#main-nav ul {
 		display: flex;		
 	}

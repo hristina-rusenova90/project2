@@ -1,36 +1,58 @@
 /*Portfolio*/ 
 
-section #portfolio-section {
+ .portfolio-section {
 	color: #393939;
 	padding-top: 120px;
 	padding-bottom: 109px;
 	background: #ffdd99;
-	.hr-line {
-		background: #e5c37f;
+	.section-header {
+			h2:after {
+			background: #e5c37f;
+		}
+		ul.our-portfolio-menu {
+			display: flex;
+			justify-content: center;
+
+			li {
+				margin-right: 10px;
+			}
+		}
 	}
-	p {
+
+	.section-header p {
 		max-width: 516px;
 		margin-bottom: 44px;
-	}	
-
-	.flex .item {
-		margin-bottom: 65px;
-		margin-right: 10px;
 	}
 
-	.flex .item div[class*="item-icon-"] {
+	.section-body {
+		text-align: center;
+	}
+
+	.our-portfolio {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}	
+
+	.portfolio {
+		margin-bottom: 65px;
+		margin-right: 10px;		
+		text-align: center;
+	}
+
+	.portfolio div[class*="portfolio-icon-"] {
 		width: 540px;
 		height: 310px;
 		margin-bottom: 30px;
 	}
 
-	.flex a {
+	.our-portfolio-menu a {
 		@include link-style;		
 		font-size: 1.125em;
 		line-height: 35px;
 		width: 90px;
 		height: 35px;		
-		margin-right: 10px;		
+		border: 1px solid #ffdd99;		
 		font-family:'titillium_webregular';
 		color: #393939;
 		font-weight: bold;
@@ -48,21 +70,21 @@ section #portfolio-section {
 		}
 	}
 
-	.item-icon-one {
+	.portfolio-icon-one {
 		background: url('../img/portfolio-1.png') no-repeat center center;
 		background-size: cover;
 	}
-	.item-icon-two {
+	.portfolio-icon-two {
 		background: url('../img/portfolio-2.png') no-repeat center center;
 		background-size: cover;
 	}
 
-	.item-icon-three {
+	.portfolio-icon-three {
 		background: url('../img/portfolio-3.png') no-repeat center center;
 		background-size: cover;
 	}
 
-	.item-icon-four {
+	.portfolio-icon-four {
 		background: url('../img/portfolio-4.png') no-repeat center center;
 		background-size: cover;
 	}
@@ -90,33 +112,34 @@ section #portfolio-section {
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-	section #portfolio-section {
-		padding: 50px 0 50px 0; 
+	 .portfolio-section {
+		padding: 50px 0 30px 0; 
 
-	.flex .item {
+	.portfolio {
 			margin-right: 0;
 		}
 
-	.flex .item div[class*="item-icon-"] {
+	.portfolio div[class*="portfolio-icon-"] {
 			width: 279px;
     		height: 166px;
 		}
 
-		.flex a {
+		.our-portfolio-menu a {
 			margin-bottom: 25px;
 			width: 75px;
 		}
-
-		.btn-wrap {
-			margin-bottom: 50px;
-		}			
+				
 	}	
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-	#portfolio-section {
+	.portfolio-section {
 		padding: 50px 0 50px 0;	
+
+		.portfolio {
+			margin-right: 10px;
+		}
 	}
 }
 /* Large devices (large desktops, 1200px and up) */

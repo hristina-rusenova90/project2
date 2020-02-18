@@ -1,0 +1,58 @@
+/*Intro*/ 
+
+.intro {
+	background: #87509c;
+	padding-bottom: 145px;
+	text-align: center;
+	color: $font-color;
+
+.shell{
+
+	padding-top: 145px;
+ h1 {
+		font-family: $bold;
+		font-size: 2.625em;
+		line-height: 49px;
+		text-align: center;		
+		margin-bottom: 60px;
+		
+	}
+
+	a.big-btn {
+		background: #eb7d4b;
+		box-shadow: 0 4px #c86a40;
+		text-align: center;
+		&:hover {
+		 	background: #d4622f;
+		 }
+	}
+	}
+}
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	.intro {
+		padding-bottom: 30px;
+	 .shell {
+		padding-top: 0;
+	    h1 {
+		line-height: 1.313em;
+		font-size: 1.625em;
+	}
+		a.big-btn {
+			width: 200px;
+			height: 60px;
+		}
+		
+		
+}}}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
+}
+

@@ -1,14 +1,14 @@
 /*Contact Form*/
-#contact-form {
+#contact-section {
 	padding: 119px 0 115px 0;
 	background: #3c5499;
 	color: $font-color;
 
-	.hr-line {
+	.section-header h2:after {
 		background: #273a71;
 	}
 
-	.hr-line + p {
+	.section-header p {
 		max-width: 779px;
 	}
 
@@ -16,36 +16,52 @@
 		max-width: 860px;
 		text-align: center;
 		margin: 0 auto;
-	}
-	.flex {
-		justify-content: space-between;
+		// display: flex;
+		// flex-wrap: wrap;
 	}
 
-	.flex .your-name, .flex .email {
-		width: 45%;
-		position:relative;
-		&:before {
-				content: "*";
-				color: red;
-				display: inline;
-				position: absolute;
-				top: 20px;
-		    	left: 123px;
-			}
+	.form-row {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+
+	}	
+
+	.form-col.form-col-1of2:first-of-type {
+		margin-right: 33px;
+	}
+	
+
+	.section-body .form-col-1of2 {
+		
+			width: 48%;
+			position:relative;			
+			color: $font-color;	
+
+				&:after {
+					content: "*";
+					color: red;
+					display: inline;
+					position: absolute;
+					top: 20px;
+			    	left: 123px;
+				}			
 	}	
 	
 
-	div input[type="email"],
-	div input[type="text"]
+	input[type="email"],
+	input[type="text"]
 	 {
+	 	
+	 	border: 1px solid #273a71;	
 		font-size: 18px;
 		line-height: 18px;
 		border-radius: 4px;
 		background: #273a71;
-		padding: 20px 25px;
+		padding: 20px 0 20px 25px;
+		box-sizing: border-box;
 		width: 100%;		
-		outline: none;
-		border: none;	
+		outline: none;		
 		color: $font-color;	
 		&:focus {
 			border: 1px solid #777982;
@@ -53,11 +69,11 @@
 			
 	}		
 	
-	.textarea {
+	.form-row-textarea {
 		width: 100%;
 		margin-top: 25px;
 		position:relative;
-		
+		border: 1px solid #3c5499;		
 			&:after {
 				content: "*";
 				color: red;
@@ -68,9 +84,10 @@
 		}
 	}
 
-	.textarea textarea {
+	.form-row-textarea textarea {
+		box-sizing: border-box;
 		width: 100%;		
-		border: none;
+		border: 1px solid #3c5499;
 		padding: 24px;
 		height: 200px;
 		position: relative;
@@ -101,6 +118,7 @@
 		box-shadow: 0 4px #299ec5;
 		outline: none;
 		border: none;
+		margin: 0 auto;
 
 		&:hover {
 		 	background: #1f6880;
@@ -110,31 +128,71 @@
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-	#contact-form {
-		padding: 50px 0 50px 0;
+	#contact-section {
+		padding: 50px 0 30px 0;
 
-	.flex {
+	.form-row {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			box-sizing: border-box;
+			flex-wrap: wrap;
 		}
-	.flex .email, .flex .your-name {
-		width: 80%;
+	.form-col.form-col-1of2:first-of-type {
+		margin-right: 0;
+	}
+	.section-body .form-col-1of2{
+		width: 96%;
 		display: inline-flex;
 		margin-bottom: 15px;
+		box-sizing: border-box;
+	}	
+
+	.form-row-textarea {
+		width: 100%;
+		display: inline-flex;
+		justify-content: center;
 	}
 
-	.textarea {
-		width: 80%;
-		display: inline-flex;
+	.big-btn {
+		width: 200px;
+		height: 50px;
 	}			
 	}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-	
-}
+	#contact-section {
+		form-row {			
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;	
+			width: 98%;		
+			}
+			.form-col {
+				margin: 0 auto;
+			}
+			.form-col.form-col-1of2:first-of-type {
+				margin-right: 6px;
+			}
+
+			 .contact-section .form-col-1of2 {
+				width: 42%;
+				display: inline-flex;
+				margin-bottom: 15px;
+				box-sizing: border-box;
+			}
+
+			.section-body .textarea {
+				width: 97%;
+			}
+
+
+
+		}
+	}
+
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
 

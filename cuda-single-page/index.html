@@ -14,381 +14,419 @@
 </head>
 <body>
 <header>
-	<div class="container">
-		<div class="flex">
-			<div>
-				<a href="#" title="logo" id="logo">
-					<img src="assets/img/logo.png" alt="logo">
-				</a>
-			</div>
-			<nav id="main-nav">
-				<ul>
-					<li><a href="#">home</a></li>
-					<li><a href="#">about</a></li>
-					<li><a href="#">work</a></li>
-					<li><a href="#">blog</a></li>
-					<li><a href="#">contact</a></li>
-				</ul>
-			</nav>
+	<div class="shell header-content--flex">
+		<a href="#" title="logo" id="logo">
+			<img src="assets/img/logo.png" alt="logo">
+		</a>
+			
+		<nav id="main-nav">
+			<ul>
+				<li><a href="#">home</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">work</a></li>
+				<li><a href="#">blog</a></li>
+				<li><a href="#">contact</a></li>
+			</ul>
+		</nav>
+		<!-- Canvas Menu -->
+		<nav id="main_nav-mobile">
+			<ul>
+				<li class="canvas-label">Manu</li>
+				<li>
+					<span id="btn-menu" onclick="document.getElementById('canvas-menu').classList.add('clicked')" class="btn-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>	
+				</li>
+			</ul>
+		</nav>	
+		<div id="canvas-menu" class="canvas">
+			<!-- Content -->
+			<div class="cl-btn">
+		  		<span class="close-canvas"  onclick="document.getElementById('canvas-menu').classList.remove('clicked')">&times;</span>
+ 	 		</div>
+			<div class="main--content">
+				
+			    <nav class="menu">
+			    	<ul>
+					    <li><a href="#">Home</a></li>
+					    <li><a href="#">About us</a></li>
+					    <li><a href="#">Services</a></li>
+					    <li><a href="#">Our Works</a></li>
+					    <li><a href="#">Contact</a></li>
+			    	</ul>
+			    </nav>
+			</div> 
 		</div>
-		<h1>Hi there! We are the new kids on the block 
-		and we build awesome websites and mobile apps.</h1>
-		<div class="a-btn-style">
-			<a href="#" class="big-btn">Work with US!</a>
-		</div>		
 	</div>	
 </header>
-<section id="content">
-	<!-- Service -->
-	<div id="service">
-		<div class="container">
-			<h2>SERVICES WE <span> PROVIDE </span></h2>
-			<div class="hr-line">
-				<span></span>
+<div class="intro">
+	<div class="shell">
+		<h1>Hi there! We are the new kids on the block 
+			and we build awesome websites and mobile apps.</h1>		
+			<a href="#" class="big-btn">Work with US!</a>					
+	</div>	
+</div>
+<div id="content">
+	<!-- Service Section-->
+	<section class="service-section" id="service">
+		<div class="shell">
+			<div class="section-header">
+				<h2>SERVICES WE <span> PROVIDE </span></h2>
+				<p>We are working with both individuals and businesses from all over the globe 
+				to create awesome websites and applications.</p>
 			</div>
-			<p>We are working with both individuals and 	businesses from all over the globe 
-			to create awesome websites and applications.</p>
 		
-			<div class="flex">			
-				<div class="flex-item-4">
-					<div class="service-icon-branding service-icon"></div>
-					<h4>Branding</h4>
-					<p>Lorem ipsum dolor sit amet, 
-					consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-				</div>			
-				<div class="flex-item-4">
-					<div class="service-icon-design service-icon"></div>
-					<h4>Design</h4>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-				</div>
-				<div class="flex-item-4">
-					<div class="service-icon-development service-icon"></div>
-					<h4>development</h4>
-					<p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
-				</div>
-				<div class="flex-item-4">
-					<div class="service-icon-rocket service-icon"></div>
-					<h4>rocket science</h4>
-					<p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
-				</div>
+			<div class="section-body">				
+				<ul class="services">
+					<li class="service">
+						<div class="service-icon-branding">								
+						</div>
+						<h4>Branding</h4>
+						<p>Lorem ipsum dolor sit amet, 
+						consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+							
+					</li>
+					<li class="service">
+						<div class="service-icon-design">
+								
+						</div>
+						<h4>Design</h4>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+							
+					</li>
+					<li class="service">
+						<div class="service-icon-development">
+								
+						</div>
+						<h4>development</h4>
+						<p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+							
+					</li>
+					<li class="service">
+						<div class="service-icon-rocket">								
+						</div>
+						<h4>rocket science</h4>
+						<p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+							
+					</li>
+				</ul>					
 			</div>
-		</div>
-	</div>
+	</section>
 	<!-- Team Section -->
-	<div id="team">
-		<div class="container">
-			<h2>MEET OUR <span>BEAUTIFUL TEAM</span></h2>
-			<div class="hr-line">
-				<span></span>
+	<section class="team-section" id="team">
+		<div class="shell">
+			<div class="section-header">
+				<h2>MEET OUR <span>BEAUTIFUL TEAM</span></h2>
+				<p>We are a small team of designers and developers, who help brands with big ideas.</p>
 			</div>
-			<p>We are a small team of designers and developers, who help brands with big ideas.</p>
-			<div class="flex">
-				<div class="flex-item-4">
-					<div class="person-icon"></div>
-					<h4>ANNE HATHAWAY</h4>
-					<span>CEO / Marketing Guru</span>
-					<p>Lorem ipsum dolor sit amet, 
-					consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
-					<div class="social-icons flex">
-						<a href="https://facebook.com/" class="facebook" title="facebook">
-							<img src="assets/img/facebook.png" alt="facebook">
-						</a>
-						<a href="https://twitter.com/" class="twitter" title="twitter">
-							<img src="assets/img/twitter.png" alt="twitter">
-						</a>
-						<a href="https://www.linkedin.com/" class="linkedin" title="linkedin">
-							<img src="assets/img/lindekin.png" alt="linkedin">
-						</a>
-						<a href="https://mail.google.com/" class="gmail" title="Gmail">
-							<img src="assets/img/gmail.png" alt="gmail">
-						</a>						
-					</div>
-				</div>
-				<div class="flex-item-4">
-					<div class="person-icon"></div>
-					<h4>Kate Upton</h4>
-					<span>Creative Director</span>
-					<p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
-					<div class="social-icons flex">						
-						<a href="https://twitter.com/" class="twitter" title="twitter">
-							<img src="assets/img/twitter.png" alt="twitter">
-						</a>
-						<a href="https://www.linkedin.com/" class="linkedin" title="linkedin">
-							<img src="assets/img/lindekin.png" alt="linkedin">
-						</a>
-						<a href="https://mail.google.com/" class="gmai" title="Gmail">
-							<img src="assets/img/gmail.png" alt="gmail">
-						</a>						
-					</div>
-
-				</div>
-				<div class="flex-item-4">
-					<div class="person-icon"></div>
-					<h4>Olivia Wilde</h4>
-					<span>Lead Designer</span>
-					<p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
-					<div class="social-icons flex">
-						<a href="https://facebook.com/" class="facebook" title="facebook">
-							<img src="assets/img/facebook.png" alt="facebook">
-						</a>
-						<a href="https://twitter.com/" class="twitter" title="twitter">
-							<img src="assets/img/twitter.png" alt="twitter">
-						</a>
-						<a href="https://www.linkedin.com/" class="linkedin" title="linkedin">
-							<img src="assets/img/lindekin.png" alt="linkedin">
-						</a>
-						<a href="https://mail.google.com/" class="gmai" title="Gmail">
-							<img src="assets/img/gmail.png" alt="gmail">
-						</a>						
-					</div>
-				</div>
-				<div class="flex-item-4">
-					<div class="person-icon"></div>
-					<h4>Ashley Greene</h4>
-					<span>SEO / Developer</span>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-					<div class="social-icons flex">
-						<a href="https://facebook.com/" class="facebook" title="facebook">
-							<img src="assets/img/facebook.png" alt="facebook">
-						</a>
-						<a href="https://twitter.com/" class="twitter" title="twitter">
-							<img src="assets/img/twitter.png" alt="twitter">
-						</a>						
-						<a href="https://mail.google.com/" class="gmai" title="Gmail">
-							<img src="assets/img/gmail.png" alt="gmail">
-						</a>						
-					</div>
-				</div>
-			</div>
+			<div class="section-body">
+				<ul class="our-team">
+					<li class="person">
+						<div class="person-avatar">
+							
+						</div>
+						<h4>ANNE HATHAWAY</h4>
+						<span>CEO / Marketing Guru</span>
+						<p>Lorem ipsum dolor sit amet, 
+						consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+						<div class="social-icons">
+							<a href="https://facebook.com/" class="facebook" title="facebook">
+								<img src="assets/img/facebook.png" alt="facebook">
+							</a>
+							<a href="https://twitter.com/" class="twitter" title="twitter">
+								<img src="assets/img/twitter.png" alt="twitter">
+							</a>
+							<a href="https://www.linkedin.com/" class="linkedin" title="linkedin">
+								<img src="assets/img/lindekin.png" alt="linkedin">
+							</a>
+							<a href="https://mail.google.com/" class="gmail" title="Gmail">
+								<img src="assets/img/gmail.png" alt="gmail">
+							</a>						
+						</div>						
+					</li>
+					<li class="person">
+						<div class="person-avatar">
+							
+						</div>
+						<h4>Kate Upton</h4>
+						<span>Creative Director</span>
+						<p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+						<div class="social-icons flex">						
+							<a href="https://twitter.com/" class="twitter" title="twitter">
+								<img src="assets/img/twitter.png" alt="twitter">
+							</a>
+							<a href="https://www.linkedin.com/" class="linkedin" title="linkedin">
+								<img src="assets/img/lindekin.png" alt="linkedin">
+							</a>
+							<a href="https://mail.google.com/" class="gmai" title="Gmail">
+								<img src="assets/img/gmail.png" alt="gmail">
+							</a>						
+						</div>						
+					</li>
+					<li class="person">
+						<div class="person-avatar">
+							
+						</div>
+						<h4>Olivia Wilde</h4>
+						<span>Lead Designer</span>
+						<p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
+						<div class="social-icons flex">
+							<a href="https://facebook.com/" class="facebook" title="facebook">
+								<img src="assets/img/facebook.png" alt="facebook">
+							</a>
+							<a href="https://twitter.com/" class="twitter" title="twitter">
+								<img src="assets/img/twitter.png" alt="twitter">
+							</a>
+							<a href="https://www.linkedin.com/" class="linkedin" title="linkedin">
+								<img src="assets/img/lindekin.png" alt="linkedin">
+							</a>
+							<a href="https://mail.google.com/" class="gmai" title="Gmail">
+								<img src="assets/img/gmail.png" alt="gmail">
+							</a>						
+						</div>
+						
+					</li>
+					<li class="person">
+						<div class="person-avatar">
+							
+						</div>
+						<h4>Ashley Greene</h4>
+						<span>SEO / Developer</span>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						<div class="social-icons flex">
+							<a href="https://facebook.com/" class="facebook" title="facebook">
+								<img src="assets/img/facebook.png" alt="facebook">
+							</a>
+							<a href="https://twitter.com/" class="twitter" title="twitter">
+								<img src="assets/img/twitter.png" alt="twitter">
+							</a>						
+							<a href="https://mail.google.com/" class="gmai" title="Gmail">
+								<img src="assets/img/gmail.png" alt="gmail">
+							</a>						
+						</div>							
+					</li>
+				</ul>
+			</div>			
 		</div>
-	</div>
+	</section>	
 	<!-- Skills Section -->
-		<div id="skills">
-			<div class="container">
+	<section class="our-skills" id="skills">
+		<div class="shell">
+			<div class="section-header">
 				<h2>WE GOT <span>SKILLS!</span></h2>
-				<div class="hr-line">
-					<span></span>
-				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-			
-			<div class="flex">
-				<div class="flex-item-4">
-					<div class="circle-wrap">
-						<div class="circle">
-				    
-					 	<div class="mask full">
-				     		 <div class="fill"></div>
-				     	</div>
-				   
-				   		 <div class="mask half">
-				     	 <div class="fill"></div>
-				    	</div>
-				    
-				    	<div class="inside-circle">
-				     	 <span>90&#37;</span>
-				   		 </div>			    
-				  		</div>
-
-					</div>
-						 <h4>WEB DESIGN</h4>
-				</div>
-				<div class="flex-item-4">
-					<div class="circle-wrap">
-						<div class="circle">
-				    
-					 	<div class="mask full html">
-				     		 <div class="fill html"></div>
-				     	</div>
-				   
-				   		 <div class="mask half">
-				     	 <div class="fill html"></div>
-				    	</div>
-				    
-				    	<div class="inside-circle">
-				     	 <span>75&#37;</span>
-				   		 </div>			    
-				  		</div>
-
-					</div>
-						 <h4>HTML / CSS</h4>
-				</div>
-				<div class="flex-item-4">
-					<div class="circle-wrap">
-						<div class="circle">
-				    
-					 	<div class="mask full design">
-				     		 <div class="fill design"></div>
-				     	</div>
-				   
-				   		 <div class="mask half">
-				     	 <div class="fill design"></div>
-				    	</div>
-				    
-				    	<div class="inside-circle">
-				     	 <span>70&#37;</span>
-				   		 </div>			    
-				  		</div>
-
-					</div>
-						 <h4>GRAPHIC DESIGN</h4>
-				</div>
-				<div class="flex-item-4">
-					<div class="circle-wrap">
-						<div class="circle">
-				    
-					 	<div class="mask full UI">
-				     		 <div class="fill UI"></div>
-				     	</div>
-				   
-				   		 <div class="mask half">
-				     	 <div class="fill UI"></div>
-				    	</div>
-				    
-				    	<div class="inside-circle">
-				     		 <span>85&#37;</span>
-				   		 </div>			    
-				  		</div>
-
-					</div>
+				tempor incididunt ut labore et dolore magna aliqua.</p>				
+			</div>
+			<div class="section-body">
+				<ul class="our-skills-list">
+					<li class="our-skills--circle">
+						<div class="circle-wrap">
+							<div class="circle">
+								<div class="mask full">
+									<div class="fill"></div>
+								</div>
+								<div class="mask half">
+									<div class="fill"></div>									
+								</div>
+								<div class="inside-circle">
+						     		 <span>90&#37;</span>
+						   		</div>			    
+						  	</div>						  	
+						</div>
+						<h4>WEB DESIGN</h4>				
+					</li>
+					<li class="our-skills--circle">
+						<div class="circle-wrap">
+							<div class="circle">
+								<div class="mask full html">
+									<div class="fill html"></div>
+								</div>
+								<div class="mask half">
+									<div class="fill html"></div>									
+								</div>
+								<div class="inside-circle">
+						     		 <span>90&#37;</span>
+						   		</div>
+							</div>
+						</div>
+						<h4>HTML / CSS</h4>
+					</li>
+					<li class="our-skills--circle">
+						<div class="circle-wrap">
+							<div class="circle">
+								<div class="mask full design">
+									<div class="fill  design"></div>
+								</div>
+								<div class="mask half">
+									<div class="fill design"></div>									
+								</div>
+								<div class="inside-circle">
+						     		 <span>90&#37;</span>
+						   		</div>
+							</div>
+						</div>
+						<h4>GRAPHIC DESIGN</h4>
+					</li>
+					<li class="our-skills--circle">
+						<div class="circle-wrap">
+							<div class="circle">
+								<div class="mask full  UI">
+									<div class="fill  UI"></div>
+								</div>
+								<div class="mask half">
+									<div class="fill UI"></div>									
+								</div>
+								<div class="inside-circle">
+						     		 <span>90&#37;</span>
+						   		</div>
+							</div>							
+						</div>
 						<h4>UI / UX</h4>
-				</div>
-				</div>
-		</div>	
+					</li>
+				</ul>
+			</div>
 		</div>
-		<!--Portfolio Section  -->
-		<div id="portfolio-section">
-			<div class="container">
+	</section>
+	<!-- Portfolio Section -->
+	<section class="portfolio-section">
+		<div class="shell">
+			<div class="section-header">
 				<h2>OUR <span>PORTFOLIO</span></h2>
-				<div class="hr-line">
-					<span></span>
-				</div>
 				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
  				consectetur, adipisci velit, sed quia non numquam</p>
-			
-				<div class="flex">
-					<a href="#" title="all" class="active">all</a>
-					<a href="#" title="web">web</a>
-					<a href="#" title="all">apps</a>
-					<a href="#" title="all">icons</a>
-				</div>
-				<div class="flex">
-					<div class=" item ">
-						<div class="item-icon-one">
+ 				<ul class="our-portfolio-menu">
+ 					<li>
+ 						<a href="#" title="all" class="active">all</a>
+ 					</li>
+ 					<li>
+ 						<a href="#" title="web">web</a>
+ 					</li>
+ 					<li>
+ 						<a href="#" title="all">apps</a>
+ 					</li>
+ 					<li>
+ 						<a href="#" title="all">icons</a>
+ 					</li>
+ 					
+ 				</ul>
+
+			</div>
+			<div class="section-body">
+				<ul class="our-portfolio">
+					<li class="portfolio">
+						<div class="portfolio-icon-one">
 							
 						</div>
 						<h5>Isometric Perspective Mock-Up</h5>
-					</div>
-					<div class=" item">
-						<div class="item-icon-two">
+					</li>
+					<li class="portfolio">
+						<div class="portfolio-icon-two">
 							
 						</div>
 						<h5>Time Zone App UI</h5>
-					</div>
-					<div class="item">
-						<div class="item-icon-three">
+					</li>
+					<li class="portfolio">
+						<div class="portfolio-icon-three">
 							
 						</div>
 						<h5>Viro Media Players UI copy 2</h5>
-					</div>
-					<div class=" item">
-						<div class="item-icon-four">
+					</li>
+					<li class="portfolio">
+						<div class="portfolio-icon-four">
 							
 						</div>
 						<h5>Blog / Magazine Flat UI Kit</h5>
-					</div>
-				</div>
-				<div class="btn-wrap">
-					<a href="#" title="MORE PROJECTS" class="big-btn">LOAD MORE PROJECTS</a>
-				</div>
+					</li>
+				</ul>
+				<a href="#" title="MORE PROJECTS" class="big-btn">LOAD MORE PROJECTS</a>
 			</div>
-		</div>
-			<!-- People Section -->
-		<div id="people-say">
-			<div class="container">
+		</div>		
+	</section>
+	<!-- Testimonials -->
+	<section class="testimonials-section">
+		<div class="shell">
+			<div class="section-header">
 				<h2>what people <span>say about us</span> </h2>
-				<div class="hr-line">
-					<span></span>
-				</div>
 				<p>Our clients love us! </p>
-				<div class="flex">
-					<div class="article-margin flex-article flex-item-2">
-						<div class="section-icon">
-							
-						</div>
-						<div class="d-flex">
-							<p><cite>Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</cite></p>
-							<h4>Chanel Iman</h4>							
-							<span>CEO of Pinterest</span>
-						</div>
-						
-					</div>
-					<div class="article-marign flex-article flex-item-2">
-						<div class="section-icon">
-							
-						</div>
-						<div class="d-flex">
-							<p><cite>Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</cite></p>
-							<h4>Chanel Iman</h4>							
-							<span>CEO of Pinterest</span>
-						</div>
-						
-					</div>
-					<div class="article flex-article flex-item-2">
-						<div class="section-icon">
-							
-						</div>
-						<div class="d-flex">
-							<p><cite>Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</cite></p>
-							<h4>Chanel Iman</h4>							
-							<span>CEO of Pinterest</span>
-						</div>
-						
-					</div>
-					<div class="article flex-article flex-item-2">
-						<div class="section-icon">
-							
-						</div>
-						<div class="d-flex">
-							<p><cite>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</cite></p>
-							<h4>EMMA STONE </h4>							
-							<span>CEO of Pinterest</span>
-						</div>
-						
-					</div>
-				</div>
 			</div>
-		</div>
+			<div class="section-body">
+				<ul class="testimonials">
+					<li class="testimonial">
+						<div class="testimonial-icon">
+							
+						</div>
+						<div class="people-say">
+							<p><cite>Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</cite></p>
+							<h4>Chanel Iman</h4>							
+							<span>CEO of Pinterest</span>
+						</div>
+					</li>
+					<li class="testimonial">
+						<div class="testimonial-icon">
+							
+						</div>
+						<div class="people-say">
+							<p><cite>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</cite></p>
+							<h4>ADRIANA LIMA </h4>
+							<span>Founder of Instagram</span>
+						</div>
+					</li>
+					<li class="testimonial">
+						<div class="testimonial-icon">
+							
+						</div>
+						<div class="people-say">
+							<p><cite>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</cite></p>
+							<h4>ANNE HATHAWAY </h4>
+							<span>Lead Designer at Behance </span>
+						</div>
+					</li>
+					<li class="testimonial">
+						<div class="testimonial-icon">
+							
+						</div>
+						<div class="people-say">
+							<p><cite>Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”
+							</cite></p>
+							<h4>EMMA STONE</h4>
+							<span>Co-Founder of Shazam </span>
+						</div>
+					</li>
+				</ul>				
+			</div>
+		</div>		
+	</section>		
 		<!-- Contact form -->
-		<div id="contact-form">
-			<div class="container">
+	<section id="contact-section" class="contact-section">
+		<div class="shell">
+			<div class="section-header">
 				<h2>GET IN TOUCH</h2>
-				<div class="hr-line">
-					<span></span>
-				</div>
 				<p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+			</div>
+			<div class="section-body">
 				<form action="#" method="POST" class="contact-form">
-					<div class="flex">
-						<div class="your-name">
+					<div class="form-row">
+						<div class="form-col form-col-1of2">
 							<input type="text" name="name" placeholder="Your Name" class="required" required="required">
 						</div>
-						<div class="email">
+
+						<div class="form-col form-col-1of2">
 							<input type="email" name="email" placeholder="Your Email" class="required" required="required">
 						</div>
-					</div>	
-					<div class="textarea">
-						<textarea  name="message" required="required" class="required" placeholder="Your Message..."></textarea>
 					</div>
-					<div class="submit-btn">
-						<input type="submit" class="big-btn" name="submit" value="Send Message">				
-					</div>					
+					<div class="form-row-textarea">
+						<textarea class="textarea" name="message" required="required" class="required" placeholder="Your Message..."></textarea>
+					</div>
+					<input type="submit" class="big-btn" name="submit" value="Send Message">	
 				</form>
 			</div>
 		</div>
-</section>
-<footer>
-	
-	<ul class="flex">
+	</section>	
+		
+<footer>	
+	<ul class="footer-menu">
 		<li>
 			<a href="#" title="Facebook">Facebook</a>
 		</li>
@@ -413,7 +451,6 @@
 		</li> 		
 	</ul>
 	</div>	
-</footer>
-	
+</footer>	
 </body>
 </html>

@@ -1,6 +1,6 @@
 /*Testimonials*/ 
 
-div#people-say {
+.testimonials-section {
 	padding: 119px 0 130px 0;;
 	background: #d74680;
 	color: $font-color;
@@ -8,31 +8,41 @@ div#people-say {
 		text-transform: uppercase;
 	}
 
-	.hr-line {
+	.section-header h2:after {
 	background:	#b73c6d;
 	}
 
-	.hr-line + p {
+	.section-header p {
 		margin-bottom: 86px;
 	}	
+	.testimonials {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 
-	.article-marign {
-		margin-bottom: 156px;
+		li:first-of-type {
+			margin-bottom: 160px;
+		}
+	}
+
+	.testimonial {
+		display: flex;		
 	}	
 
-	.section-icon {
+	.testimonial-icon {
 		width: 94px;
 		height: 95px;
 		background: url('../img/article.png')no-repeat center center;
 		background-size: cover;
 		margin: 0 auto;
-		border-radius: 95px;		
+		border-radius: 95px;
+		margin-right: 50px;		
 	}
 
-	.d-flex {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+	.people-say {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
 
 	}
 	p  {
@@ -59,26 +69,49 @@ div#people-say {
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-	#people-say {
-		padding: 50px 0 50px 0;	
- 
-		div.article-marign {
-		margin-bottom: 0;
+	.testimonials-section {
+		padding: 50px 0 30px 0;	
+ 		.testimonials {
+			flex-direction: column;			
+			justify-content: center;
+
+		li:first-of-type {
+			margin-bottom:0;
+		}
+
+		.testimonial {
+			flex-direction: column;
+			width: 100%;
+		}
 	}
-		div.section-icon {
+	
+		div.testimonial-icon {
 		margin-bottom: 15px;
+		margin-right: 0;
+		margin: 0 auto;
 	}
-		.d-flex {
+		.people-say {
 			align-items:center;
 			margin-bottom: 20px;
+			text-align: center;
 		}		
 	}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-	
-}
+	.testimonials-section {
+			flex-direction: column;			
+			justify-content: center;
+			.testimonials{
+		li:first-of-type {
+			margin-bottom:0;
+		}
+		li {
+			margin-bottom: 25px;
+		}
+	}
+}}
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
 

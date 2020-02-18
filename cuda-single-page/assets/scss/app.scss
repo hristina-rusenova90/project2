@@ -2,7 +2,9 @@
 @import "fonts.css";
 @import "variables";
 @import "mixins"; 
+@import "mobile-menu"; 
 @import "header";
+@import "intro"; 
 @import "service";
 @import "team"; 
 @import "skills"; 
@@ -21,40 +23,27 @@ html, body {
 	box-sizing: border-box;
 	overflow-x: hidden;
 }
-	.container {
-		
+	.shell {		
 		max-width: 1100px;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
-
-	.flex {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;	
-	}
-
-	.flex .flex-item-4 {
-	    width: 25%;
-	    text-align: center
-	}
-
-	.flex .flex-item-2 {
-		width: 50%;
-		display: flex;
-	}
-
-	h2 {
+	.section-header h2 {
 		@include h2;
-		}
 
-	.hr-line + p {
+		&:after {
+			content: '';
+			@include hr; 
+		    position: absolute;		   
+		    top: 100%;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		}}		
+
+	.section-header p {
 		@include section-description;
 	}	
-
-	div.hr-line {
-			@include hr;
-		}
 
 	a.big-btn {
 		@include a-big-btn;
@@ -71,48 +60,25 @@ html, body {
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-	.container {
+	.shell {
 		padding: 0 15px;
-	.flex {
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-	.flex-item-4 {
-	    width: 90%;
-	    margin-bottom: 15px;	    
-	}
 
-	.flex-item-2 {
-		width: 100%;
-		flex-direction: column;
-		text-align: center;
-	}
+		.section-header span {
+			display: inline-flex;
+			margin-top: 20px;
+		}
 
-}
-
-	h2 span {
-			display: block;
-			margin-top: 15px;
+		a.big-btn {
+			width: 200px;
+			height: 60px;
 		}
 }
+	
 }
-
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
 
-	.container {
-		.flex {
-			justify-content: center;
-			flex-wrap: wrap;
-			flex-direction: row;
-		}
-
-		.flex-item-4 {
-			width: 50%;
-			margin-bottom: 20px;
-		}
 	}
-}
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
 

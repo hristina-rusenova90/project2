@@ -5,9 +5,12 @@ footer {
 	color: $font-color;
 	padding: 40px 0;
 
+	
 	ul  {
 		margin: 0 auto;
 		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
 
 		li {
 			margin-right: 50px;
@@ -16,6 +19,7 @@ footer {
 				margin-right: 0;
 			}
 
+
 			a {
 				font-family: $semi-bold;
 				font-size: 1.5em;
@@ -23,6 +27,10 @@ footer {
 				text-align: center;
 				text-decoration: none;
 				color: #fff;
+				&:hover {
+				color: #30bae7;
+			}
+
 			}
 			a.active {
 				color: #30bae7;

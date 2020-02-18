@@ -1,23 +1,22 @@
 /*Header*/ 
 
-header {
-	min-height: 595px;
+header {	
 	background: #87509c;
 	color: $font-color;
+	padding-top: 57px;
 
-	.flex {
+	.header-content--flex {
+		display: flex;
 		justify-content: space-between;
 	}
 
-	.flex div {
-		margin-top: 57px;
-		margin-left: 42px;
-		margin-bottom: 147px;
+	/*Btn Open Menu on Desktop*/ 					
+	#main_nav-mobile {
+		display: none;
 	}
-	nav {
-		margin: 67px 0 25px 0;
-	}
-	nav ul {
+		
+	
+	nav#main-nav ul {
 		display: flex;		
 	}
 	li {
@@ -28,79 +27,80 @@ header {
 	}
 
 	li a {
-		@include link-style;
-		// text-decoration: none;		
+		@include link-style;				
 		font-size: 1em;
-		line-height: 18px;
-		// text-transform: uppercase;
-		width: 77px;
-		// outline: none;
-		// text-align: center;
-		// display: inline-flex;
-		height: 32px;
-		// justify-content: center;
-		// align-items: center;
-		// border-radius: 4px;
-		// transition: 0.3s;
+		line-height: 18px;		
+		width: 77px;		
+		height: 32px;		
 		color: $font-color;
-
-
 		&:hover {
 			background: #643a79;
 		}
+	}}										/*Mobile Menu*/ 	
+
+	
+	/*Menu content*/ 
+	#canvas-menu {
+		display: none;
+	}
+		 
+	/*Btn open menu style*/ 
+	#main_nav-mobile {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;		
+		color: $font-color;	
+
+	 ul {
+		display: flex;
 	}
 
-	h1 {
-		font-family: $bold;
-		font-size: 2.625em;
-		line-height: 49px;
-		text-align: center;		
-		margin-bottom: 60px;
+	li.canvas-label {
+		
+		margin-right: 20px;
 	}
 
-	.a-btn-style {
-		text-align: center;
-
+	span#btn-menu {
+		color: $font-color;
+		cursor: pointer;
+		display: flex;	
+		flex-direction: column;	
+		margin-right: 10px;
 	}
 
-	a.big-btn {
-		background: #eb7d4b;
-		box-shadow: 0 4px #c86a40;
-		&:hover {
-		 	background: #d4622f;
-		 }
-	}
-	}
-	 
+	span#btn-menu span {
+		background: #fff;
+		width: 26px;
+		height: 2px;
+		margin-bottom: 7px;
+	}}
 
-
+	
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-	header {
-		min-height: 530px;
-	}
-	header .container .flex {
-		flex-direction: column;
+	
+	 header .header-content--flex {
+		flex-wrap: wrap;
 		align-items: center;
-	 div {
-		margin: 25px auto;
-	}
+		padding: 0 15px 30px 15px;
 
-	nav {
-		margin: 40px auto;
-	}
-	ul li a {
-		width: 48px;
-		height: 25px;
-		line-height: 8px;
-	}}
-	header  h1 {
-		line-height: 1.313em;
-		font-size: 1.625em;
-		
-	}	
-}
+		#main-nav {
+			display: none;
+		}
+
+		#canvas-menu {
+			&.clicked {
+			display: block;
+			}}
+
+		#main_nav-mobile {
+		display: block;
+		}}}
+
+	
+	
+
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
@@ -108,6 +108,5 @@ header {
 }
 /* Large devices (large desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
-
 
 }

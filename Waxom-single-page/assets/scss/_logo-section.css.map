@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,gBAAgB;AAEhB,aAAc;EACb,UAAU,EAAE,yDAAyD;EACrE,eAAe,EAAE,KAAK;EACtB,OAAO,EAAE,OAAO;EAEhB,oCAAuB;IACtB,OAAO,EAAE,IAAI;IACb,SAAS,EAAE,IAAI;IACf,eAAe,EAAE,YAAY;IAE7B,wCAAI;MACH,KAAK,EAAE,KAAK;MACZ,MAAM,EAAE,IAAI",
-"sources": ["_logo-section.scss"],
-"names": [],
-"file": "_logo-section.css"
-}

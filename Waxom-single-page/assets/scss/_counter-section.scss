@@ -1,0 +1,109 @@
+/*Counter*/ 
+
+#counters{
+	background: url('../img/counter-bg.jpg') no-repeat center center;
+	background-size: cover;
+	padding-top: 70px;
+	padding-bottom: 60px;
+
+	.wrap-counter {
+		display: flex;
+		flex-wrap: wrap;
+		// justify-content: 
+
+	}
+
+
+	div[class*="counter-"] {
+		width: 20%;
+		text-align: center;
+	}
+
+	div[class*="-icon"] {
+		width: 53px;
+		height: 47px;
+		margin: auto auto 30px auto;
+		
+	}
+
+	.counter-one-icon {
+		background: url('../img/counter-one.png') no-repeat center center;		
+	}
+
+	.counter-two-icon {
+		background: url('../img/counter-two.png') no-repeat center center;
+	}
+
+	.counter-three-icon {
+		background: url('../img/counter-three.png') no-repeat center center;
+	}
+
+	.counter-four-icon {
+		background: url('../img/counter-four.png') no-repeat center center;
+	}
+
+	.counter-five-icon {
+		background: url('../img/counter-five.png') no-repeat center center;
+	}
+
+	span.counter	{
+		font-size: 48px;
+		line-height: 36px;
+		color: #fff;
+		text-align: center;
+		font-family: $montserrat-light;
+		margin-bottom: 20px;
+	}
+
+	h4	{
+		 color: #c7b299;
+		 text-align: center;
+		 font-size: 14px;
+		 line-height: 20px;
+		 text-transform: uppercase;
+	}
+
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+#counters{		
+		.wrap-counter {
+			// flex-direction: column;
+			align-items: center;
+
+			div[class*="counter-"] {
+				width: 50%;
+				margin: auto auto 20px auto;
+			}
+
+		}
+}
+}
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+.mobile-section {		
+		background-size: 25%;
+   		background-position: left 20px;
+    	padding-top: 20px;
+		 .section-header h2 {
+		 	font-size: 24px;
+		 }
+
+		 .section-header p {
+		 	font-size: 16px;
+		 }
+
+		.section-body-list li i {
+		 	width: 15px;
+		 	height: 15px;
+		 	font-size: 15px;
+		 	margin-right: 10px;
+		 }
+	}
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}

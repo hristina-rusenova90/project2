@@ -1,0 +1,45 @@
+/*Ideas Section*/ 
+
+.ideas-section {
+	padding: 45px 0 0 0;
+	background: #fbfaf8;
+	color: #555;
+	text-align: center;
+
+	}
+
+	/*Ideas- slider*/ 
+
+	#ideas-slider {
+		.item {
+			background-size: cover;
+			height: 480px;
+			transition: 0.6s;
+			
+
+		#ideas-slider .owl-dots {
+				display: none;
+			}
+
+
+		}
+
+		.owl-item:not(.center)  {
+ 			 z-index: 4;
+		}
+
+		// .owl-item:not(.center) > div:hover {
+ 	// 		 opacity: .75;
+		// }
+
+		.owl-item.active.center {
+			width: 482px;
+			z-index: 2;
+       // transform: scale(1.1, 1.2);
+
+ }
+
+		
+
+		 
+	}

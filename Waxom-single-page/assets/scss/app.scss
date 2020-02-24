@@ -1,0 +1,95 @@
+@import "reset.css";
+@import "mixins";
+@import "variables";
+@import "owl.carousel.css";
+@import "fonts.css";
+@import "header";
+@import "mobile-menu";
+@import "main-slider";
+@import "service-section";
+@import "ideas-section";
+@import "wordpress-section";
+@import "latest-product";
+@import "section-video";
+@import "mobile-section";
+@import "counter-section";
+@import "posts-section";
+@import "logo-section";
+@import "footer-section";
+
+
+
+
+
+
+
+
+
+
+/*Global Styles*/ 
+
+html, body {
+	font-family: $releway-regular;
+	min-width: 320px; 
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+	.shell {		
+		max-width: 1173px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+
+	a.btn {
+		@include big-btn;
+		&:hover {
+			box-shadow: 2px -4px #726257;
+		}
+	}
+
+	.section-header h2 {
+		@include section-heading;
+	}
+
+	.section-header p {
+		@include section-description;
+	}
+	
+	#main-slider .owl-dots {
+		
+		position: absolute;
+		bottom: 60px;
+		left:0;
+		right: 0;		
+	}
+
+	
+	#main-slider .owl-dot {
+		@include owl-dot;
+
+		&.active {
+			background: none;
+			border: 2px solid #d3c1ad;
+		}
+	}
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	.shell {
+		padding: 0 15px;
+	}
+	}
+	 
+	
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}

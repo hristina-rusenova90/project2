@@ -1,0 +1,14 @@
+/*Logo Section*/
+#logo-section {
+  background: url("../img/logo-section-bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 135px 0; }
+  #logo-section .logo-section--content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    #logo-section .logo-section--content img {
+      width: 170px;
+      height: auto; }
+
+/*# sourceMappingURL=_logo-section.css.map */

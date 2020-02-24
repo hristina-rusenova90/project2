@@ -1,0 +1,37 @@
+/*Logo Section*/ 
+
+#logo-section {
+	background: url('../img/logo-section-bg.jpg') no-repeat center center;
+	background-size: cover;
+	padding: 135px 0;
+
+	.logo-section--content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+
+		img {
+			width: 170px;
+			height: auto;
+		}
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	#logo-section {
+		padding: 30px 0;
+
+		img {
+			margin-bottom: 30px;
+		}
+	}}
+	
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	
+}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}

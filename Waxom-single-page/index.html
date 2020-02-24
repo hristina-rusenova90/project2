@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Waxom-Single-Page</title>
+	<link rel="stylesheet" type="text/css" href="assets/scss/app.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="waxom-Single-Page">
+	<meta name="keywords" content="HTML,CSS,SCSS">
+	<meta name="author" content="HRIS">
+</head>
+<body>
+<header>
+	<div class="shell" id="navigation">
+		<a href="#" title="logo" id="logo">
+			<img src="assets/img/waxom-logo.png" alt="logo">
+			<span>Waxom</span>
+		</a>
+			
+		<nav id="main-nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Shortcodes</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- Canvas Menu -->
+		<nav id="main_nav-mobile">
+			<ul>
+				<li class="canvas-label">Manu</li>
+				<li>
+					<span id="btn-menu" onclick="document.getElementById('canvas-menu').classList.add('clicked')" class="btn-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>	
+				</li>
+			</ul>
+		</nav>	
+		<div id="canvas-menu" class="canvas">
+			<!-- Content -->
+			<div class="cl-btn">
+		  	<span class="close-canvas"  onclick="document.getElementById('canvas-menu').classList.remove('clicked')">&times;</span>
+ 	 		</div>
+			<div class="main--content">				
+			    <nav class="menu">
+			    	<ul>
+					    <li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Shortcodes</a></li>
+						<li><a href="#">Contact</a></li>
+			    	</ul>
+			    </nav>
+			</div> 
+		</div>		
+			<a href="#" title="cart" class="header-cart">
+				<img src="assets/img/cart-icon.png" alt="search-icon" title="search-icon">
+			</a>	
+		
+		
+			<a href="#" title="search" class="header-search">
+				<img src="assets/img/search-icon.png" alt="search-icon" title="search-icon">
+			</a>		
+	</div>	
+</header>
+<section id="main-slider" class="owl-carousel">
+		<div class="item" style="background-image: url(assets/img/slider-bg.jpg)">
+			<div class="shell">		
+				<div class="section-header">
+					<h2>Unique and Modern Design</h2>
+					<h1>Portfolio PSD Template </h1>
+				</div>
+				<div class="section-body">
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+				</div>	
+			</div>	
+			<a href="#" class="btn" title="button">Get Started</a>
+		</div>
+		<div class="item" style="background-image: url(assets/img/slider-bg.jpg)">
+			<div class="shell">		
+				<div class="section-header">
+					<h2>Unique and Modern Design</h2>
+					<h1>Portfolio PSD Template </h1>
+				</div>
+				<div class="section-body">
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+					<a href="#" class="btn" title="button">Get Started</a>
+				</div>
+			</div>			
+		</div>
+		<div class="item" style="background-image: url(assets/img/slider-bg.jpg)">
+			<div class="shell">		
+				<div class="section-header">
+					<h2>Unique and Modern Design</h2>
+					<h1>Portfolio PSD Template </h1>
+				</div>
+				<div class="section-body">
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+					<a href="#" class="btn" title="button">Get Started</a>
+				</div>			
+			</div>
+		</div>	
+		<div class="item" style="background-image: url('assets/img/slider-bg.jpg')">
+			<div class="shell">
+				<div class="section-header">
+					<h2>Unique and Modern Design</h2>
+					<h1>Portfolio PSD Template </h1>
+				</div>
+				<div class="section-body">
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+					<a href="#" class="btn" title="button">Get Started</a>
+				</div>
+			</div>				
+		</div>		
+</section>
+<!-- Service Section-->
+<section class="service-section" id="service">
+	<div class="shell">		
+		<div class="section-body">				
+			<ul class="services">
+				<li class="service">
+					<div class="service-icon-web">								
+					</div>
+					<h4>Web & App Design</h4>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+							
+				</li>
+				<li class="service">
+					<div class="service-icon-development">								
+					</div>
+					<h4>Development</h4>
+					<p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>							
+				</li>
+				<li class="service">
+					<div class="service-icon-customization">
+								
+				</div>
+					<h4>Customization</h4>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+							
+				</li>
+				<li class="service">
+					<div class="service-icon-marketing">								
+					</div>
+					<h4>Marketing</h4>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>							
+				</li>
+			</ul>					
+		</div>
+	</section>
+	<!-- Ideas Slider -->
+	<section class="ideas-section" id="ideas">
+		<div class="shell">
+			<div class="section-header">
+				<h2>Waxom is Realization of your Ideas</h2>
+				<p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+			</div>
+			<div class="section-body owl-carousel" id="ideas-slider">
+				<div class="item" style="background: url('assets/img/ideas-bg.jpg') no-repeat center center">					
+				</div>
+				<div class="item" style="background: url('assets/img/ideas-bg.jpg') no-repeat center center">					
+				</div>
+				<div class="item" style="background: url('assets/img/ideas-bg.jpg') no-repeat center center">					
+				</div>				
+			</div>
+		</div>		
+	</section>
+	<!-- Wordpress Theme -->
+	<section class="wordpress-section">
+		<div class="shell">
+			<div class="section-header--wordpress">
+				<h3>Waxom Multipurpose WordPress Theme</h3>
+				<p>Don't Forget to Rate the Template. Thanks so much!</p>
+			</div>
+			<a href="#"  class="btn" title="Purchase Now">Purchase Now</a>
+		</div>	
+	</section>
+	<!-- Latest product -->
+	<section class="latest-projects">
+		<div class="shell">
+			<div class="section-header">
+				<h2>Our Latest Projects</h2>
+				<p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+			</div>
+			<div class="section-nav">
+				<ul>
+					<li>
+						<a href="#" title="all">ALL</a>
+					</li>
+					<li>
+						<a href="#" title="Web Design">Web Design</a>
+					</li>
+					<li>
+						<a href="#" title="Mobile App">Mobile App</a>
+					</li>
+					<li>
+						<a href="#" title="Illustration">Illustration</a>
+					</li>
+					<li>
+						<a href="#" title="Photography">Photography</a>
+					</li>
+				</ul>
+			</div>
+			<div class="section-body">
+			<ul>
+				<li class="project">
+					<div class="project-img-one">
+					</div>
+					<div class="project-description">
+						<h4>Claritas Etiam Processus</h4>
+						<span>Photography, Nature</span>
+					</div>
+					<div class="on-stage">
+						<img src="assets/img/hover-search.png" title="search" alt="search">
+						<img src="assets/img/hover.png"  title="hover" alt="hover-icon">
+					</div>					
+				</li>
+				<li class="project">
+					<div class="project-img-two">
+					</div>
+					<div class="project-description">
+						<h4>Quam Nutamus Farum</h4>
+						<span>Graphic Design, Mock-Up</span>
+					</div>
+					<div class="on-stage">
+						<img src="assets/img/hover-search.png" title="search" alt="search">
+						<img src="assets/img/hover.png"  title="hover" alt="hover-icon">
+					</div>
+					
+				</li>
+				<li class="project">
+					<div class="project-img-three">
+					</div>
+					<div class="project-description">
+						<h4>Usus Legentis Videntur</h4>
+						<span>Photography, Holiday</span>
+					</div>
+					<div class="on-stage">
+						<img src="assets/img/hover-search.png" title="search" alt="search">
+						<img src="assets/img/hover.png"  title="hover" alt="hover-icon">
+					</div>
+					
+				</li>
+				<li class="project">
+					<div class="project-img-four">
+					</div>
+					<div class="project-description">
+						<h4>Claritas Etiam Processus</h4>
+						<span>Photography, Nature</span>
+					</div>
+					<div class="on-stage">
+						<img src="assets/img/hover-search.png" title="search" alt="search">
+						<img src="assets/img/hover.png"  title="hover" alt="hover-icon">
+					</div>
+					
+				</li>
+				<li class="project">
+					<div class="project-img-five">
+					</div>
+					<div class="project-description">
+						<h4>Quam Nutamus Farum</h4>
+						<span>Graphic Design, Mock-Up</span>
+					</div>
+					<div class="on-stage">
+						<img src="assets/img/hover-search.png" title="search" alt="search">
+						<img src="assets/img/hover.png"  title="hover" alt="hover-icon">
+					</div>
+					
+				</li>
+				<li class="project">
+					<div class="project-img-six">
+					</div>
+					<div class="project-description">
+						<h4>Usus Legentis Videntur</h4>
+						<span>Photography, Holiday</span>
+					</div>
+					<div class="on-stage">
+						<img src="assets/img/hover-search.png" title="search" alt="search">
+						<img src="assets/img/hover.png"  title="hover" alt="hover-icon">
+					</div>					
+				</li>
+			</ul>	
+			</div>			
+		</div>		
+	</section>
+	<section class="video-section">
+		<div class="shell">
+			
+   				 <div class="section-content">
+   				 	<div class="video-icon">
+   				 		<img src="assets/img/video-icon.png" alt="play video">
+   				 	</div>
+   				 	<h2>Waxom Video Presentation</h2>
+   				 	<p>
+   				 		Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.
+   				 	</p>
+   				 	<span><time>03:26</time></span>
+   				 </div>			
+		</div>
+	</section>
+	<section class="mobile-section">
+		<div class="shell">
+			<div class="section-header mobile-header">
+				<h2>Excellent for Mobile Devices</h2>
+				<p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>	
+			</div>
+			<div class="section-body-list">
+				<ul>
+
+					<li>
+						<i class="fas fa-chevron-right"></i>
+						<span>Nam liber tempor cum soluta nobis eleifend option;</span>
+					</li>
+					<li>
+						<i class="fas fa-chevron-right"></i>
+						<span>Option congue nihil imperdiet doming id quod mazim placerat facer;</span>
+					</li>
+					<li>
+						<i class="fas fa-chevron-right"></i>
+						<span>Eodem modo typi, qui nunc nobis videntur parum futurum;</span>
+					</li>
+					<li>
+						<i class="fas fa-chevron-right"></i>
+						<span>Investigationes demonstraverunt lectores</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="counters">
+		<div class="shell">
+			<div class="wrap-counter">
+				<div class="counter-one">
+					<div class="counter-one-icon"></div>
+					<span class="counter">3587</span>
+					<h4>Satisfied Clients</h4>
+				</div>
+				<div class="counter-two">
+					<div class="counter-two-icon"></div>
+					<span class="counter">207</span>
+					<h4>Cups of coffee</h4>
+				</div>
+				<div class="counter-three">
+					<div class="counter-three-icon"></div>
+					<span class="counter">2500</span>
+					<h4>Blog posts</h4>
+				</div>
+				<div class="counter-four">
+					<div class="counter-four-icon"></div>
+					<span class="counter">873</span>
+					<h4>Likes</h4>
+				</div>
+				<div class="counter-five">
+					<div class="counter-five-icon"></div>
+					<span class="counter">900</span>
+					<h4>We launched</h4>
+				</div>
+			</div>	
+		</div>	
+	</section>
+	<section id="posts-section">
+		<div class="shell">
+			<div class="section-header">
+				<h2>Recent Posts.</h2>
+				<p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+			</div>
+			<div class="section-body owl-carousel" id="post-slider">
+				<div class="item post-one">
+					<div class="post-one-img"></div>
+					<div class="date-post">
+						<span class="date">30</span>
+						<span class="month">Sep.</span>
+					</div>
+					<div class="post-description">
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium</p>
+						<span>Read More</span>
+					</div>
+				</div>
+				<div class="item post-two">
+					<div class="post-two-img"></div>
+					<div class="date-post">
+						<span class="date">30</span>
+						<span class="month">Sep.</span>
+					</div>
+					<div class="post-description">
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium</p>
+						<span>Read More</span>
+					</div>
+				</div>
+				<div class="item post-three">
+					<div class="post-three-img"></div>
+					<div class="date-post">
+						<span class="date"><time>30</time></span>
+						<span class="month">Sep.</span>
+					</div>
+					<div class="post-description">
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium</p>
+						<span>Read More</span>
+					</div>
+				</div>
+				<div class="item post-three">
+					<div class="post-three-img"></div>
+					<div class="date-post">
+						<span class="date"><time>30</time></span>
+						<span class="month">Sep.</span>
+					</div>
+					<div class="post-description">
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium</p>
+						<span>Read More</span>
+					</div>
+				</div>
+				<div class="item post-one">
+					<div class="post-one-img"></div>
+					<div class="date-post">
+						<span class="date">30</span>
+						<span class="month">Sep.</span>
+					</div>
+					<div class="post-description">
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium</p>
+						<span>Read More</span>
+					</div>
+				</div>
+				<div class="item post-two">
+					<div class="post-two-img"></div>
+					<div class="date-post">
+						<span class="date">30</span>
+						<span class="month">Sep.</span>
+					</div>
+					<div class="post-description">
+						<h4>Lorem ipsum dolor sit amet</h4>
+						<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium</p>
+						<span>Read More</span>
+					</div>
+				</div>				
+			</div>				
+		</div>	
+	</section>
+	<section id="logo-section">
+		<div class="shell">
+			<div class="logo-section--content">
+				<img src="assets/img/logo-one.png" alt="logo" title="logo">
+				<img src="assets/img/logo-two.png" alt="logo" title="logo">
+				<img src="assets/img/logo-three.png" alt="logo" title="logo">
+				<img src="assets/img/logo-four.png" alt="logo" title="logo">
+			</div>
+		</div>
+	</section>
+<footer>
+	<div class="shell">
+		<div class="footer-content">
+			<div class="footer-site-description">
+				<a href="#" title="waxon-logo" class="logo" >
+					<img src="assets/img/waxom-logo.png" alt="logo">
+					<span>Waxom</span>
+				</a>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.
+				</p>
+				<span class="span-logo-footer">Read More</span>
+			</div>
+			<div class="footer-site-posts">
+				<h4>Recent Posts</h4>
+				<time datetime="2015-08-08">September 08, 2015</time>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+
+				<time datetime="2015-08-08">September 08, 2015</time>
+				<p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+
+				<time datetime="2015-08-08">September 08, 2015</time>
+				<p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
+			</div>
+			<div class="footer-site-twitter">
+				<h4>Our Twitter</h4>
+				<div class="tweet-one">
+					<p><a href="#" title="Waxom">@waxom </a>Cum soluta nobis eleifend option congue nihil imperdiet </p>
+					<time>3 mins ago</time>
+				</div>
+				<div class="tweet-two">
+					<p>Mirum est<a href="#" title="envato"> #envato</a> notare quam littera gothica, quam nunc putamu </p>
+					<time>5 hours ago</time>
+				</div>
+				<div class="tweet-three">
+					<p>Soluta nobis option bit.ly/1Hniso7</p>
+					<time>20 days ago</time>
+				</div>			
+			</div>
+			<div class="footer-site-dribble">
+				<h4>Dribbble Widget</h4>
+				<div class="dribble-wrap">
+					<div class="dribbble-one"></div>
+					<div class="dribbble-two"></div>
+					<div class="dribbble-three"></div>
+					<div class="dribbble-four"></div>
+				</div>
+			</div>
+		</div>
+	</div>	
+		<div class="copyright">
+			<div class="shell">				
+				<ul>
+					<li><span>Copyright&#169;2015 Waxom</span></li>
+					<li>Privacy Policy</li>
+					<li>FAQ</li>
+					<li>Support</li>
+				</ul>	
+				<div>
+					<span>Designed by <a href="#">ThemeFire</a></span>
+					<span>Only on <a href="#">Envato Market</a></span>
+				</div>				
+			</div>
+		</div>
+</footer>
+			<script type="text/javascript" src="assets/js/jquery.js"></script>
+			<script type="text/javascript" src="assets/js/app.js"></script>	
+			<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
+			<script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
+			<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>			
+
+</body>
+</html>

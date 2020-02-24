@@ -1,0 +1,50 @@
+/*Wordpress Section*/
+.wordpress-section {
+	padding: 45px 15px;
+	background: url('../img/wordpress-bg.jpg') no-repeat center center;
+	background-size: cover;
+
+	.shell{
+	display: flex;
+	justify-content: space-between;	
+
+	}
+	.section-header--wordpress {		
+		h3 {
+			font-family: $releway-regular;
+			font-size: 28px;
+			color: #c7b299;
+		}
+
+		p {
+	 			font-size: 18px;
+	 			color: #615855;
+	 			font-family: $montserrat-light;
+	 		}
+	}
+} 
+
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	
+	 .wordpress-section .shell {
+	 	flex-wrap: wrap;
+	 	text-align: center;
+	 	justify-content: center;
+
+	 	.section-header--wordpress {
+	 		width: 90%;
+	 		text-align: center;
+	 		margin-bottom: 20px;
+
+	 		h3 {
+	 			margin-bottom: 15px;
+	 		}
+	 	}
+
+	 	a.btn {
+	 		text-align: center;
+	 	}
+	 }}
+

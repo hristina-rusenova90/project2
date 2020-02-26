@@ -1,0 +1,81 @@
+/*Buttons*/
+@mixin big-btn {
+		width: 169px;
+		height: 52px;		
+		font-family: $releway-extrabold;
+		line-height: 23px;
+		display: inline-flex;
+		background: #988574;
+		text-decoration: none;
+		font-size: 14px;
+		text-transform: uppercase;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0 3px #726257;
+		border:1px solid #726257;
+		border-radius: 4px;
+		cursor: pointer;		
+		transition: 0.3s;
+		color: $font-color;		
+		text-align: center;		
+		 
+}
+
+@mixin owl-prev {
+	position: absolute;
+	left: 35px;
+	top: 0;		
+	bottom: 0;
+	right: 0;
+	margin: auto auto auto 20px;	
+	border-top: 0.5vmin solid #a2a19f;
+	border-right: 0.5vmin solid #a2a19f;	
+	transform: translate3d(0,-50%,0) rotate(-135deg);
+
+}
+
+@mixin owl-next {
+	position: absolute;
+	left: 0;
+	top: 0;		
+	bottom: 0;
+	right: 35px;
+	margin: auto 20px auto auto;		
+	transform: translate3d(0,-50%,0) rotate(45deg);
+	border-top: 0.5vmin solid #a2a19f;
+	border-right: 0.5vmin solid #a2a19f;
+	
+}
+
+@mixin owl-dots {
+	position: absolute;
+	bottom: 40px;
+	text-align: center;
+}
+@mixin owl-dot {	
+	width: 20px;
+	height: 20px;	
+	margin: 8px;
+	border-radius: 20px;
+	transition: 0.3s;
+	background: #9c9a9a;
+	border: 2px solid #9c9a9a;
+}
+
+@mixin section-heading {
+	text-align: center;
+	font-size: 30px;
+	font-family: $releway-semibold;
+	color: #555;
+	margin-bottom: 25px;
+
+}
+
+
+@mixin section-description {
+	max-width: 770px;
+	font-size: 16px;
+	line-height: 28px;
+	margin: auto auto 40px auto;
+	font-family: $montserrat-light;
+}

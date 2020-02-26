@@ -1,0 +1,112 @@
+/*Service Section */
+
+.service-section {
+	padding-top: 70px;
+	padding-bottom: 70px;
+
+
+	ul.services {
+		display: flex;
+		flex-wrap: wrap;		
+		justify-content: space-between;
+	}
+
+	.services .sevrice {
+		flex: 1 1 25%; 
+	}
+
+	.service {		
+		text-align: center;
+		&:nth-of-type(2) h4 {
+			color: #c7b299;
+		}	
+
+	div[class*="service-icon-"] {
+		height: 50px;
+		margin-bottom: 25px;
+	}
+
+	.service-icon-web {
+		background: url('../img/web-icon.png')no-repeat center center;
+	}
+
+	.service-icon-development {
+		background: url('../img/development-icon.png')no-repeat center center;
+	}
+
+	.service-icon-customization {
+		background: url('../img/customization-icon.png')no-repeat center center;
+	}
+
+	.service-icon-marketing {
+		background: url('../img/marketing-icon.png')no-repeat center center;
+	}
+	h4 {
+		font-family: $releway-semibold;
+		font-size: 22px;
+		color: #555;
+		margin-bottom: 40px;
+	}
+
+	p {
+		width: 270px;
+		font-size: 14px;
+		line-height: 24px;
+		color: #8c8c8c;
+		font-family: $montserrat-light;
+		margin: 0 auto;
+		position: relative;
+		&:after {			
+			content: '';			 
+		    position: absolute;		   
+		    top: 100%;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    max-width: 71px;
+			height: 4px;
+			background: #f1eee9;			
+			text-align: center;
+			margin: 25px auto 25px auto;
+		}
+	}
+}} 
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	.service-section {		
+			padding-top: 30px;
+			padding-bottom: 30px;
+			
+			ul.services {
+				justify-content: center;
+			.service {				
+				padding: 15px;
+				margin-bottom: 35px;
+			}
+		}
+		
+	}}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+	.service-section {		
+		ul.services {	
+			justify-content: center;
+	
+		.service {			
+	    	margin-bottom: 40px;
+		}			
+	}
+}}
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+	.service-section {		
+		ul.services {	
+			justify-content: center;
+	
+		.service {			
+	    	margin-bottom: 50px;
+		}			
+	}
+}}
